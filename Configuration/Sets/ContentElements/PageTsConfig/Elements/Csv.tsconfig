@@ -1,0 +1,19 @@
+mod.wizards.newContentElement.wizardItems.data {
+    elements {
+        csv {
+            iconIdentifier = content-nbbasetemplate-csv
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.csv
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.csv.description
+            tt_content_defValues {
+                CType = csv
+            }
+        }
+    }
+    show := addToList(csv)
+}
+
+mod.web_layout.tt_content {
+    preview {
+        csv = EXT:nb_basetemplate/Resources/Private/Templates/Preview/Csv.html
+    }
+}

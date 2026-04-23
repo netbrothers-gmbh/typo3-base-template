@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.media {
+    elements {
+        icon_group {
+            iconIdentifier = content-nbbasetemplate-icon-group
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.icon_group
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.icon_group.description
+            tt_content_defValues {
+                CType = icon_group
+            }
+        }
+    }
+    show := addToList(icon_group)
+}

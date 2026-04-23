@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:nb="http://typo3.org/ns/NetBrothers/TYPO3BaseTemplate/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Header" />
+<f:section name="Main">
+
+    <f:variable name="imageConfig">{settings.responsiveimages.contentelements.textpic.centered_left}</f:variable>
+    <nb:data.imageVariants as="variants" variants="{variants}" multiplier="{imageConfig.multiplier}" gutters="{imageConfig.gutters}" corrections="{imageConfig.corrections}" />
+    <div class="textpic textpic-centered textpic-left">
+        <div class="textpic-item textpic-gallery">
+            <f:render partial="Media/Gallery" arguments="{_all}" />
+        </div>
+        <div class="textpic-item textpic-text">
+            <f:render partial="Header/All" arguments="{_all}" />
+            <f:format.html>{data.bodytext}</f:format.html>
+        </div>
+    </div>
+
+</f:section>
+</html>

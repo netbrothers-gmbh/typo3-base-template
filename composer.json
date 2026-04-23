@@ -1,0 +1,44 @@
+{
+    "name": "netbrothers-gmbh/typo3-base-template",
+    "type": "typo3-cms-extension",
+    "description": "TYPO3 Base Template based on Bootstrap Package by legendary Benjamin Kott",
+    "keywords": ["TYPO3 CMS"],
+    "homepage": "https://netbrothers.de/",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Thilo Ratnaweera",
+            "email": "thilo.ratnaweera@netbrothers.de",
+            "homepage": "https://netbrothers.de/"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "ext-PDO": "*",
+        "ext-dom": "*",
+        "ext-filter": "*",
+        "ext-hash": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-simplexml": "*",
+        "typo3/cms-backend": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-core": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-extbase": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-extensionmanager": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-fluid": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-frontend": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-install": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-rte-ckeditor": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-seo": "^12.4 || ^13.4 || 13.*.*@dev"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "nb_basetemplate"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "NetBrothers\\TYPO3BaseTemplate\\": "Classes"
+        }
+    }
+}

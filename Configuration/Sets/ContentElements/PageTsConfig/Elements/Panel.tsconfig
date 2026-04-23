@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.text {
+    elements {
+        panel {
+            iconIdentifier = content-panel
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.panel
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.panel.description
+            tt_content_defValues {
+                CType = panel
+            }
+        }
+    }
+    show := addToList(panel)
+}

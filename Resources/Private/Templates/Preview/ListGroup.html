@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:nb="http://typo3.org/ns/NetBrothers/TYPO3BaseTemplate/ViewHelpers" data-namespace-typo3-fluid="true">
+<br>
+<nb:explode data="{bodytext}" as="rows">
+    <f:if condition="{rows}">
+        <ul>
+            <f:for each="{rows}" as="content" iteration="iterateRow">
+                <li>{content}</li>
+            </f:for>
+        </ul>
+    </f:if>
+</nb:explode>
+</html>

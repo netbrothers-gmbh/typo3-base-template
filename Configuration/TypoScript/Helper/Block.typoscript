@@ -1,0 +1,43 @@
+# TEMPLATE BLOCK
+#
+#  TypoScript Example:
+#  ---------------
+#
+#  10 < lib.block
+#  10.templateName = MyBlock
+#
+#
+#  Fluid Example:
+#  ---------------
+#
+#  <f:cObject typoscriptObjectPath="lib.block" data="{template: 'MyBlock'}" />
+#
+lib.block = FLUIDTEMPLATE
+lib.block {
+    templateName = Default
+    templateName {
+        override {
+            field = template
+        }
+    }
+    templateRootPaths {
+        0 = EXT:nb_basetemplate/Resources/Private/Templates/Blocks/
+        10 = {$plugin.nb_basetemplate_blocks.view.templateRootPath}
+    }
+    partialRootPaths {
+        0 = EXT:nb_basetemplate/Resources/Private/Partials/Blocks/
+        10 = {$plugin.nb_basetemplate_blocks.view.partialRootPath}
+    }
+    layoutRootPaths {
+        0 = EXT:nb_basetemplate/Resources/Private/Layouts/Blocks/
+        10 = {$plugin.nb_basetemplate_blocks.view.layoutRootPath}
+    }
+
+    dataProcessing {
+        1 = NetBrothers\TYPO3BaseTemplate\DataProcessing\ConstantsProcessor
+        1 {
+            as = theme
+            key = page.theme
+        }
+    }
+}

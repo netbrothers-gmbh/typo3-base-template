@@ -1,0 +1,46 @@
+<f:if condition="{pagination.allPageNumbers -> f:count()} > 1">
+    <nav aria-label="{f:translate(key: 'pagination.aria.label', extensionName: 'NbBasetemplate')}">
+        <ul class="pagination">
+
+            <f:if condition="{pagination.previousPageNumber}">
+                <li class="page-item page-item-previous">
+                    <f:variable name="ariaLabel"><f:translate key="pagination.aria.goto.previous" extensionName="NbBasetemplate" /></f:variable>
+                    <nb:link.paginate class="page-link" additionalAttributes="{aria-label: ariaLabel}" paginationId="{id}" paginationPage="{pagination.previousPageNumber}">
+                        <span class="page-link-title"><f:translate key="pagination.previous" extensionName="NbBasetemplate" /></span>
+                    </nb:link.paginate>
+                </li>
+            </f:if>
+
+            <f:for each="{pagination.allPageNumbers}" as="pageNumber">
+                <f:if condition="{pageNumber} == {paginator.currentPageNumber}">
+                    <f:then>
+                        <f:variable name="ariaLabel"><f:translate key="pagination.aria.current.page" arguments="{0: pageNumber}" extensionName="NbBasetemplate" /></f:variable>
+                        <li class="page-item active">
+                            <nb:link.paginate class="page-link" additionalAttributes="{aria-label: ariaLabel, aria-current: 'true'}" paginationId="{id}" paginationPage="{pageNumber}">
+                                <span class="page-link-title">{pageNumber}</span>
+                            </nb:link.paginate>
+                        </li>
+                    </f:then>
+                    <f:else>
+                        <f:variable name="ariaLabel"><f:translate key="pagination.aria.goto.page" arguments="{0: pageNumber}" extensionName="NbBasetemplate" /></f:variable>
+                        <li class="page-item">
+                            <nb:link.paginate class="page-link" additionalAttributes="{aria-label: ariaLabel}" paginationId="{id}" paginationPage="{pageNumber}">
+                                <span class="page-link-title">{pageNumber}</span>
+                            </nb:link.paginate>
+                        </li>
+                    </f:else>
+                </f:if>
+            </f:for>
+
+            <f:if condition="{pagination.nextPageNumber}">
+                <li class="page-item page-item-next">
+                    <f:variable name="ariaLabel"><f:translate key="pagination.aria.goto.next" extensionName="NbBasetemplate" /></f:variable>
+                    <nb:link.paginate class="page-link" additionalAttributes="{aria-label: ariaLabel}" paginationId="{id}" paginationPage="{pagination.nextPageNumber}">
+                        <span class="page-link-title"><f:translate key="pagination.next" extensionName="NbBasetemplate" /></span>
+                    </nb:link.paginate>
+                </li>
+            </f:if>
+
+        </ul>
+    </nav>
+</f:if>

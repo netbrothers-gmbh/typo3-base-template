@@ -1,0 +1,19 @@
+mod.wizards.newContentElement.wizardItems.text {
+    elements {
+        quote {
+            iconIdentifier = content-quote
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.quote
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.quote.description
+            tt_content_defValues {
+                CType = quote
+            }
+        }
+    }
+    show := addToList(quote)
+}
+
+mod.web_layout.tt_content {
+    preview {
+        quote = EXT:nb_basetemplate/Resources/Private/Templates/Preview/Quote.html
+    }
+}

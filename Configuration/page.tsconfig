@@ -1,0 +1,29 @@
+[!extensionConfiguration.isToggleEnabled('nb_basetemplate', 'disablePageTsContentElements')]
+    # Add Content Elements
+    @import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/ContentElement/All.tsconfig'
+[end]
+
+[!extensionConfiguration.isToggleEnabled('nb_basetemplate', 'disablePageTsBackendLayouts')]
+    # Add BackendLayouts for the BackendLayout DataProvider
+    @import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig'
+[end]
+
+[!extensionConfiguration.isToggleEnabled('nb_basetemplate', 'disablePageTsRTE')]
+    # RTE
+    @import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/RTE.tsconfig'
+[end]
+
+[!extensionConfiguration.isToggleEnabled('nb_basetemplate', 'disablePageTsTCADefaults')]
+    # TCADefaults
+    @import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/TCADefaults.tsconfig'
+[end]
+
+[!extensionConfiguration.isToggleEnabled('nb_basetemplate', 'disablePageTsTCEMAIN')]
+    # TCEMAIN
+    @import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/TCEMAIN.tsconfig'
+[end]
+
+[!extensionConfiguration.isToggleEnabled('nb_basetemplate', 'disablePageTsTCEFORM')]
+    # TCEFORM
+    @import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/TCEFORM.tsconfig'
+[end]

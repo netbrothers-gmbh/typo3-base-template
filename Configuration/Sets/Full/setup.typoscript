@@ -1,0 +1,11 @@
+# DEPENDENCIES
+@import 'EXT:nb_basetemplate/Configuration/TypoScript/Extension/setup.typoscript'
+
+# HELPER
+@import 'EXT:nb_basetemplate/Configuration/TypoScript/Helper/Block.typoscript'
+@import 'EXT:nb_basetemplate/Configuration/TypoScript/Helper/PageClass.typoscript'
+
+# GENERAL
+@import 'EXT:nb_basetemplate/Configuration/TypoScript/General/page.typoscript'
+@import 'EXT:nb_basetemplate/Configuration/TypoScript/General/plugin.typoscript'
+@import 'EXT:nb_basetemplate/Configuration/TypoScript/General/config.typoscript'

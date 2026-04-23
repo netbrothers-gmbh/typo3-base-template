@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.interactive {
+    elements {
+        carousel_fullscreen {
+            iconIdentifier = content-nbbasetemplate-carousel
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.carousel_fullscreen
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.carousel_fullscreen.description
+            tt_content_defValues {
+                CType = carousel_fullscreen
+            }
+        }
+    }
+    show := addToList(carousel_fullscreen)
+}

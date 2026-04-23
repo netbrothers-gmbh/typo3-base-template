@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.interactive {
+    elements {
+        timeline {
+            iconIdentifier = content-nbbasetemplate-timeline
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.timeline
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.timeline.description
+            tt_content_defValues {
+                CType = timeline
+            }
+        }
+    }
+    show := addToList(timeline)
+}

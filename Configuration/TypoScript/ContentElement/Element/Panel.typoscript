@@ -1,0 +1,6 @@
+tt_content.panel >
+# CTYPE: TYPO3 BASE TEMPLATE PANEL
+tt_content.panel =< lib.contentElement
+tt_content.panel {
+    templateName = Panel
+}

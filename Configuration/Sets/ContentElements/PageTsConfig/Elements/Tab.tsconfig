@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.media {
+    elements {
+        tab {
+            iconIdentifier = content-nbbasetemplate-tab
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.tab
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.tab.description
+            tt_content_defValues {
+                CType = tab
+            }
+        }
+    }
+    show := addToList(tab)
+}

@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:nb="http://typo3.org/ns/NetBrothers/TYPO3BaseTemplate/ViewHelpers" data-namespace-typo3-fluid="true">
+<nb:externalMedia title="{external_media_title}" url="{external_media_source}" class="embed-responsive-item">
+    <f:if condition="{externalMedia}">
+        <f:then>
+            <div style="max-width: 400px;">
+                <div class="embed-responsive embed-responsive-{external_media_ratio}">
+                    <f:format.raw>{externalMedia}</f:format.raw>
+                </div>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="alert alert-warning">
+                <f:translate key="externalmediaunsupported" extensionName="nb_basetemplate" arguments="{0: '\'{external_media_source}\''}" />
+            </div>
+        </f:else>
+    </f:if>
+</nb:externalMedia>
+</html>

@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.social {
+    elements {
+        social_links {
+            iconIdentifier = content-nbbasetemplate-social-links
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.social_links
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.social_links.description
+            tt_content_defValues {
+                CType = social_links
+            }
+        }
+    }
+    show := addToList(social_links)
+}

@@ -1,0 +1,757 @@
+categories:
+  TYPO3BaseTemplate:
+    label: 'TYPO3 Base Template'
+  TYPO3BaseTemplate.logo:
+    label: 'Logo'
+    parent: TYPO3BaseTemplate
+  TYPO3BaseTemplate.favicon:
+    label: 'Favicon'
+    parent: TYPO3BaseTemplate
+  TYPO3BaseTemplate.templates:
+    label: 'Templates'
+    parent: TYPO3BaseTemplate
+  TYPO3BaseTemplate.templates.page:
+    label: 'Pages'
+    parent: TYPO3BaseTemplate.templates
+  TYPO3BaseTemplate.templates.block:
+    label: 'Block'
+    parent: TYPO3BaseTemplate.templates
+  TYPO3BaseTemplate.templates.plugin:
+    label: 'Plugin'
+    parent: TYPO3BaseTemplate.templates
+  TYPO3BaseTemplate.navigation:
+    label: 'Navigation'
+    parent: TYPO3BaseTemplate
+  TYPO3BaseTemplate.navigation.main:
+    label: 'Main'
+    parent: TYPO3BaseTemplate.navigation
+  TYPO3BaseTemplate.navigation.dropdown:
+    label: 'Dropdown'
+    parent: TYPO3BaseTemplate.navigation
+  TYPO3BaseTemplate.navigation.sub:
+    label: 'Subnavigation'
+    parent: TYPO3BaseTemplate.navigation
+  TYPO3BaseTemplate.navigation.breadcrumb:
+    label: 'Breadcrumb'
+    parent: TYPO3BaseTemplate.navigation
+  TYPO3BaseTemplate.navigation.meta:
+    label: 'Meta'
+    parent: TYPO3BaseTemplate.navigation
+  TYPO3BaseTemplate.navigation.footer:
+    label: 'Footer'
+    parent: TYPO3BaseTemplate.navigation
+  TYPO3BaseTemplate.navigation.language:
+    label: 'Language'
+    parent: TYPO3BaseTemplate.navigation
+  TYPO3BaseTemplate.contact:
+    label: 'Contact'
+    parent: TYPO3BaseTemplate
+  TYPO3BaseTemplate.contact.data:
+    label: 'Data'
+    parent: TYPO3BaseTemplate.contact
+  TYPO3BaseTemplate.contact.button:
+    label: 'Button'
+    parent: TYPO3BaseTemplate.contact
+  TYPO3BaseTemplate.copyright:
+    label: 'Copyright'
+    parent: TYPO3BaseTemplate
+  TYPO3BaseTemplate.socialmedia:
+    label: 'Social Media'
+    parent: TYPO3BaseTemplate
+  TYPO3BaseTemplate.meta:
+    label: 'Meta'
+    parent: TYPO3BaseTemplate
+  TYPO3BaseTemplate.config:
+    label: 'Config'
+    parent: TYPO3BaseTemplate
+  TYPO3BaseTemplate.settings:
+    label: 'Settings'
+    parent: TYPO3BaseTemplate
+
+settings:
+
+  # Logo
+  page.logo.file:
+    label: 'Logo'
+    description: 'Leave blank to use website title from template instead'
+    category: TYPO3BaseTemplate.logo
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Public/Images/TYPO3BaseTemplate.svg'
+
+  page.logo.height:
+    label: 'Height'
+    category: TYPO3BaseTemplate.logo
+    type: number
+    default: 52
+
+  page.logo.width:
+    label: 'Width'
+    category: TYPO3BaseTemplate.logo
+    type: number
+    default: 180
+
+  page.logo.alt:
+    label: 'Alternative text'
+    description: 'Text of the alt attribute of the logo image (default: "<website title> logo"'
+    category: TYPO3BaseTemplate.logo
+    type: string
+    default: ''
+
+  page.logo.linktitle:
+    label: 'Link title'
+    description: 'Title of the link attribute of the logo image'
+    category: TYPO3BaseTemplate.logo
+    type: string
+    default: ''
+
+  # Favicon
+  page.favicon.file:
+    label: 'Favicon'
+    category: TYPO3BaseTemplate.favicon
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Public/Icons/favicon.ico'
+
+  # Navigation
+  page.theme.navigation.style:
+    label: 'Navigation Style'
+    category: TYPO3BaseTemplate.navigation.main
+    type: string
+    enum:
+      'default': 'Default'
+      'default-transition': 'Default Transition'
+      'inverse': 'Inverse'
+      'inverse-transition': 'Inverse Transition'
+    default: 'default'
+
+  page.theme.navigation.type:
+    label: 'Navigation Style'
+    category: TYPO3BaseTemplate.navigation.main
+    type: string
+    enum:
+      '': 'Default'
+      'top': 'Fixed'
+    default: ''
+
+  page.theme.navigation.icon.enable:
+    label: 'Navigation Icon Enable'
+    category: TYPO3BaseTemplate.navigation.main
+    type: bool
+    default: true
+
+  page.theme.navigation.icon.width:
+    label: 'Navigation Icon Width'
+    category: TYPO3BaseTemplate.navigation.main
+    type: int
+    default: 20
+
+  page.theme.navigation.icon.height:
+    label: 'Navigation Icon Height'
+    category: TYPO3BaseTemplate.navigation.main
+    type: int
+    default: 20
+
+  # Dropdown
+  page.theme.navigation.dropdown.icon.enable:
+    label: 'Dropdown Icon Enable'
+    category: TYPO3BaseTemplate.navigation.dropdown
+    type: bool
+    default: true
+
+  page.theme.navigation.dropdown.icon.width:
+    label: 'Dropdown Icon Height'
+    category: TYPO3BaseTemplate.navigation.dropdown
+    type: int
+    default: 16
+
+  page.theme.navigation.dropdown.icon.height:
+    label: 'Dropdown Icon Height'
+    category: TYPO3BaseTemplate.navigation.dropdown
+    type: int
+    default: 16
+
+  # Subnavigation
+  page.theme.subnavigation.icon.enable:
+    label: 'SubNavigation Icon Enable'
+    category: TYPO3BaseTemplate.navigation.sub
+    type: bool
+    default: true
+
+  page.theme.subnavigation.icon.width:
+    label: 'SubNavigation Icon Height'
+    category: TYPO3BaseTemplate.navigation.sub
+    type: int
+    default: 16
+
+  page.theme.subnavigation.icon.height:
+    label: 'SubNavigation Icon Height'
+    category: TYPO3BaseTemplate.navigation.sub
+    type: int
+    default: 16
+
+  # Breadcrumb
+  page.theme.breadcrumb.enable:
+    label: 'Enable'
+    category: TYPO3BaseTemplate.navigation.breadcrumb
+    type: bool
+    default: true
+
+  page.theme.breadcrumb.enableLevel:
+    label: 'Show menu level if greater or equal to this value'
+    category: TYPO3BaseTemplate.navigation.breadcrumb
+    type: int
+    default: 2
+
+  page.theme.breadcrumb.icon.enable:
+    label: 'Breadcrumb Icon Enable'
+    category: TYPO3BaseTemplate.navigation.breadcrumb
+    type: bool
+    default: true
+
+  page.theme.breadcrumb.icon.width:
+    label: 'Breadcrumb Icon Height'
+    category: TYPO3BaseTemplate.navigation.breadcrumb
+    type: int
+    default: 16
+
+  page.theme.breadcrumb.icon.height:
+    label: 'Breadcrumb Icon Height'
+    category: TYPO3BaseTemplate.navigation.breadcrumb
+    type: int
+    default: 16
+
+  # Meta
+  page.theme.meta.enable:
+    label: 'Enable'
+    category: TYPO3BaseTemplate.navigation.meta
+    type: bool
+    default: true
+
+  page.theme.meta.navigationValue:
+    label: 'Values'
+    description: 'Comma separated list of page uids'
+    category: TYPO3BaseTemplate.navigation.meta
+    type: string
+    default: ''
+
+  page.theme.meta.navigationType:
+    label: 'Type'
+    category: TYPO3BaseTemplate.navigation.meta
+    type: string
+    enum:
+      'list': 'List'
+      'directory': 'Directory'
+    default: 'list'
+
+  page.theme.meta.includeNotInMenu:
+    label: 'Include items not in menu'
+    category: TYPO3BaseTemplate.navigation.meta
+    type: bool
+    default: true
+
+  # Footer
+  page.theme.footernavigation.enable:
+    label: 'Enable'
+    category: TYPO3BaseTemplate.navigation.footer
+    type: bool
+    default: true
+
+  page.theme.footernavigation.navigationValue:
+    label: 'Values'
+    description: 'Comma separated list of page uids'
+    category: TYPO3BaseTemplate.navigation.footer
+    type: string
+    default: ''
+
+  page.theme.footernavigation.navigationType:
+    label: 'Type'
+    category: TYPO3BaseTemplate.navigation.footer
+    type: string
+    enum:
+      'list': 'List'
+      'directory': 'Directory'
+    default: 'list'
+
+  page.theme.footernavigation.includeNotInMenu:
+    label: 'Include items not in menu'
+    category: TYPO3BaseTemplate.navigation.footer
+    type: bool
+    default: true
+
+  page.theme.footernavigation.levels:
+    label: 'Levels'
+    category: TYPO3BaseTemplate.navigation.footer
+    type: int
+    default: 2
+
+  page.theme.footernavigation.icon.enable:
+    label: 'Footer Icon Enable'
+    category: TYPO3BaseTemplate.navigation.footer
+    type: bool
+    default: true
+
+  page.theme.footernavigation.icon.width:
+    label: 'Footer Icon Height'
+    category: TYPO3BaseTemplate.navigation.footer
+    type: int
+    default: 16
+
+  page.theme.footernavigation.icon.height:
+    label: 'Footer Icon Height'
+    category: TYPO3BaseTemplate.navigation.footer
+    type: int
+    default: 16
+
+  # Language
+  page.theme.language.enable:
+    label: 'Enable'
+    category: TYPO3BaseTemplate.navigation.language
+    type: bool
+    default: true
+
+  page.theme.language.languageValue:
+    label: 'Language Navigation'
+    description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
+    category: TYPO3BaseTemplate.navigation.language
+    type: string
+    default: 'auto'
+
+  # Contact
+  page.theme.contact.enable:
+    label: 'Enable'
+    category: TYPO3BaseTemplate.contact
+    type: bool
+    default: false
+
+  page.theme.contact.label:
+    label: 'Label'
+    category: TYPO3BaseTemplate.contact
+    type: string
+    default: 'LLL:EXT:nb_basetemplate/Resources/Private/Language/locallang.xlf:contact.label'
+
+  # Contact Data
+  page.theme.contact.data.title:
+    label: 'Title'
+    category: TYPO3BaseTemplate.contact.data
+    type: string
+    default: ''
+
+  page.theme.contact.data.addressLine1:
+    label: 'Address Line 1'
+    category: TYPO3BaseTemplate.contact.data
+    type: string
+    default: ''
+
+  page.theme.contact.data.addressLine2:
+    label: 'Address Line 2'
+    category: TYPO3BaseTemplate.contact.data
+    type: string
+    default: ''
+
+  page.theme.contact.data.addressLine3:
+    label: 'Address Line 3'
+    category: TYPO3BaseTemplate.contact.data
+    type: string
+    default: ''
+
+  page.theme.contact.data.country:
+    label: 'Country'
+    category: TYPO3BaseTemplate.contact.data
+    type: string
+    default: ''
+
+  page.theme.contact.data.phone:
+    label: 'Phone'
+    category: TYPO3BaseTemplate.contact.data
+    type: string
+    default: ''
+
+  page.theme.contact.data.fax:
+    label: 'Fax'
+    category: TYPO3BaseTemplate.contact.data
+    type: string
+    default: ''
+
+  page.theme.contact.data.email:
+    label: 'Email'
+    category: TYPO3BaseTemplate.contact.data
+    type: string
+    default: ''
+
+  page.theme.contact.data.www:
+    label: 'WWW'
+    category: TYPO3BaseTemplate.contact.data
+    type: string
+    default: ''
+
+  # Contact Button
+  page.theme.contact.button.pageUid:
+    label: 'Page Uid'
+    category: TYPO3BaseTemplate.contact.button
+    type: int
+    default: 0
+
+  page.theme.contact.button.label:
+    label: 'Page Uid'
+    category: TYPO3BaseTemplate.contact.button
+    type: string
+    default: 'LLL:EXT:nb_basetemplate/Resources/Private/Language/locallang.xlf:contact.button.label'
+
+  page.theme.contact.button.colorClass:
+    label: 'Class'
+    category: TYPO3BaseTemplate.contact.button
+    type: string
+    enum:
+      'primary': 'primary'
+      'secondary': 'secondary'
+    default: 'primary'
+
+  # Copyright
+  page.theme.copyright.enable:
+    label: 'Enable'
+    category: TYPO3BaseTemplate.copyright
+    type: bool
+    default: true
+
+  page.theme.copyright.text:
+    label: 'Text'
+    category: TYPO3BaseTemplate.copyright
+    type: string
+    default: 'Running with <a href="http://www.typo3.org" rel="noopener" target="_blank">TYPO3</a> and <a href="https://netbrothers.de" rel="noopener" target="_blank">NetBrothers TYPO3 Base Template</a>.'
+
+  # Social Media
+  page.theme.socialmedia.enable:
+    label: 'Enable'
+    category: TYPO3BaseTemplate.socialmedia
+    type: bool
+    default: true
+
+  page.theme.socialmedia.channels.facebook.label:
+    label: 'Facebook Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Facebook'
+
+  page.theme.socialmedia.channels.facebook.url:
+    label: 'Facebook Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.x.label:
+    label: 'X Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'X'
+
+  page.theme.socialmedia.channels.x.url:
+    label: 'X Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.bluesky.label:
+    label: 'Bluesky Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Bluesky'
+
+  page.theme.socialmedia.channels.bluesky.url:
+    label: 'Bluesky Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.mastodon.label:
+    label: 'Mastodon Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Mastodon'
+
+  page.theme.socialmedia.channels.mastodon.url:
+    label: 'Mastodon Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.threads.label:
+    label: 'Threads Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Threads'
+
+  page.theme.socialmedia.channels.threads.url:
+    label: 'Threads Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.telegram.label:
+    label: 'Telegram Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Telegram'
+
+  page.theme.socialmedia.channels.telegram.url:
+    label: 'Telegram Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.whatsapp.label:
+    label: 'Whatsapp Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Whatsapp'
+
+  page.theme.socialmedia.channels.whatsapp.url:
+    label: 'Whatsapp Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.instagram.label:
+    label: 'Instagram Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Instagram'
+
+  page.theme.socialmedia.channels.instagram.url:
+    label: 'Instagram Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.github.label:
+    label: 'GitHub Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'GitHub'
+
+  page.theme.socialmedia.channels.github.url:
+    label: 'GitHub Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.researchgate.label:
+    label: 'Research Gate Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Research Gate'
+
+  page.theme.socialmedia.channels.researchgate.url:
+    label: 'Research Gate Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.linkedin.label:
+    label: 'LinkedIn Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'LinkedIn'
+
+  page.theme.socialmedia.channels.linkedin.url:
+    label: 'LinkedIn Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.xing.label:
+    label: 'Xing Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Xing'
+
+  page.theme.socialmedia.channels.xing.url:
+    label: 'Xing Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.youtube.label:
+    label: 'YouTube Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'YouTube'
+
+  page.theme.socialmedia.channels.youtube.url:
+    label: 'YouTube Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.vk.label:
+    label: 'VK Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'VK'
+
+  page.theme.socialmedia.channels.vk.url:
+    label: 'VK Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.vimeo.label:
+    label: 'Vimeo Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Vimeo'
+
+  page.theme.socialmedia.channels.vimeo.url:
+    label: 'Vimeo Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.rss.label:
+    label: 'RSS Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'RSS'
+
+  page.theme.socialmedia.channels.rss.url:
+    label: 'RSS Url'
+    description: 'Insert the full account url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  page.theme.socialmedia.channels.discord.label:
+    label: 'Discord Label'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: 'Discord'
+
+  page.theme.socialmedia.channels.discord.url:
+    label: 'Discord Url'
+    description: 'Insert the full server url'
+    category: TYPO3BaseTemplate.socialmedia
+    type: string
+    default: ''
+
+  # Template Page
+  page.fluidtemplate.layoutRootPath:
+    label: 'Layout Root Path'
+    category: TYPO3BaseTemplate.templates.page
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Private/Layouts/Page/'
+
+  page.fluidtemplate.partialRootPath:
+    label: 'Partial Root Path'
+    category: TYPO3BaseTemplate.templates.page
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Private/Partials/Page/'
+
+  page.fluidtemplate.templateRootPath:
+    label: 'Template Root Path'
+    category: TYPO3BaseTemplate.templates.page
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Private/Templates/Page/'
+
+  # Template Block
+  plugin.nb_basetemplate_blocks.view.layoutRootPath:
+    label: 'Layout Root Path'
+    category: TYPO3BaseTemplate.templates.block
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Private/Layouts/Blocks/'
+
+  plugin.nb_basetemplate_blocks.view.partialRootPath:
+    label: 'Partial Root Path'
+    category: TYPO3BaseTemplate.templates.block
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Private/Partials/Blocks/'
+
+  plugin.nb_basetemplate_blocks.view.templateRootPath:
+    label: 'Template Root Path'
+    category: TYPO3BaseTemplate.templates.block
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Private/Templates/Blocks/'
+
+  # Template Plugin
+  plugin.nb_basetemplate.view.layoutRootPath:
+    label: 'Layout Root Path'
+    category: TYPO3BaseTemplate.templates.plugin
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Private/Layouts/'
+
+  plugin.nb_basetemplate.view.partialRootPath:
+    label: 'Partial Root Path'
+    category: TYPO3BaseTemplate.templates.plugin
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Private/Partials/'
+
+  plugin.nb_basetemplate.view.templateRootPath:
+    label: 'Template Root Path'
+    category: TYPO3BaseTemplate.templates.plugin
+    type: string
+    default: 'EXT:nb_basetemplate/Resources/Private/Templates/'
+
+  # Settings
+  plugin.nb_basetemplate.settings.cssSourceMapping:
+    label: 'CSS source mapping'
+    description: 'Create a CSS source map useful to debug CSS in browser developer tools. Note: CSS compression will be disabled.'
+    category: TYPO3BaseTemplate.settings
+    type: bool
+    default: false
+
+  plugin.nb_basetemplate.settings.overrideParserVariables:
+    label: 'Override Parser Variables'
+    description: 'If enabled the variables defined in your SCSS files will be overridden with the ones defined as Site Settings'
+    category: TYPO3BaseTemplate.settings
+    type: bool
+    default: true
+
+  # Meta
+  page.meta.viewport:
+    label: 'viewport'
+    category: TYPO3BaseTemplate.meta
+    type: string
+    default: 'width=device-width, initial-scale=1, minimum-scale=1'
+
+  page.meta.robots:
+    label: 'robots'
+    category: TYPO3BaseTemplate.meta
+    type: string
+    default: 'index,follow'
+
+  page.meta.mobile-web-app-capable:
+    label: 'mobile-web-app-capable'
+    category: TYPO3BaseTemplate.meta
+    type: string
+    default: 'no'
+
+  page.meta.compatible:
+    label: 'compatible'
+    category: TYPO3BaseTemplate.meta
+    type: string
+    default: 'IE=edge'
+
+  # Config
+  config.no_cache:
+    label: 'No Cache'
+    category: TYPO3BaseTemplate.config
+    type: bool
+    default: false
+
+  config.headerComment:
+    label: 'Header Comment'
+    category: TYPO3BaseTemplate.config
+    type: string
+    default: 'Based on the TYPO3 Base Template by NetBrothers - https://netbrothers.de/'

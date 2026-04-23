@@ -1,0 +1,8 @@
+page {
+    includeCSS {
+        theme = EXT:nb_basetemplate/Resources/Public/Css/theme.css
+    }
+    includeJSFooterlibs {
+        bootstrap = EXT:nb_basetemplate/Resources/Public/JavaScript/bootstrap.bundle.min.js
+    }
+}

@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.media {
+    elements {
+        audio {
+            iconIdentifier = content-audio
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.audio
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.audio.description
+            tt_content_defValues {
+                CType = audio
+            }
+        }
+    }
+    show := addToList(audio)
+}

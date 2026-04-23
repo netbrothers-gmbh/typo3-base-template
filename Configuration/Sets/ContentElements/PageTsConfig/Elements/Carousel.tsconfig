@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.interactive {
+    elements {
+        carousel {
+            iconIdentifier = content-nbbasetemplate-carousel
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.carousel
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.carousel.description
+            tt_content_defValues {
+                CType = carousel
+            }
+        }
+    }
+    show := addToList(carousel)
+}

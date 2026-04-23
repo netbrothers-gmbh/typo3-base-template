@@ -1,0 +1,26 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  NetBrothers\TYPO3BaseTemplate\:
+    resource: '../Classes/*'
+
+  NetBrothers\TYPO3BaseTemplate\Service\BrandingService:
+    tags:
+      - name: event.listener
+        identifier: 'netbrothers-gmbh/typo3-base-template/set-backend-styling'
+        event: TYPO3\CMS\Core\Package\Event\AfterPackageActivationEvent
+
+  NetBrothers\TYPO3BaseTemplate\Service\IconProviderService:
+    tags:
+      - name: event.listener
+        identifier: 'netbrothers-gmbh/typo3-base-template/modify-icon-providers'
+        event: NetBrothers\TYPO3BaseTemplate\Events\ModifyIconProvidersEvent
+
+  NetBrothers\TYPO3BaseTemplate\Backend\ToolbarItem\VersionToolbarItem:
+    tags:
+      - name: event.listener
+        identifier: 'netbrothers-gmbh/typo3-base-template/add-version-information'
+        event: TYPO3\CMS\Backend\Backend\Event\SystemInformationToolbarCollectorEvent

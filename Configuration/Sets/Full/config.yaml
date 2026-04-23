@@ -1,0 +1,8 @@
+name: typo3-base-template/full
+label: 'TYPO3 Base Template: Full Package'
+dependencies:
+  - typo3-base-template/backend-layouts
+  - typo3-base-template/bootstrap-5
+  - typo3-base-template/content-elements
+  - typo3-base-template/rte
+  - typo3-base-template/skiplink

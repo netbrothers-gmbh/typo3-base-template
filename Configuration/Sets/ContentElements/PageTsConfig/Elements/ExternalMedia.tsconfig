@@ -1,0 +1,19 @@
+mod.wizards.newContentElement.wizardItems.media {
+    elements {
+        external_media {
+            iconIdentifier = content-nbbasetemplate-externalmedia
+            title = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.external_media
+            description = LLL:EXT:nb_basetemplate/Resources/Private/Language/Backend.xlf:content_element.external_media.description
+            tt_content_defValues {
+                CType = external_media
+            }
+        }
+    }
+    show := addToList(external_media)
+}
+
+mod.web_layout.tt_content {
+    preview {
+        external_media = EXT:nb_basetemplate/Resources/Private/Templates/Preview/ExternalMedia.html
+    }
+}
