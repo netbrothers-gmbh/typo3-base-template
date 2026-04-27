@@ -2,19 +2,19 @@ plugin.tx_nbbasetemplate {
     view {
         templateRootPaths {
             0 = EXT:nb_basetemplate/Resources/Private/Templates/
-            1 = {$plugin.nb_basetemplate.view.templateRootPath}
+            1 = {$plugin.tx_nb_basetemplate.view.templateRootPath}
         }
         partialRootPaths {
             0 = EXT:nb_basetemplate/Resources/Private/Partials/
-            1 = {$plugin.nb_basetemplate.view.partialRootPath}
+            1 = {$plugin.tx_nb_basetemplate.view.partialRootPath}
         }
         layoutRootPaths {
             0 = EXT:nb_basetemplate/Resources/Private/Layouts/
-            1 = {$plugin.nb_basetemplate.view.layoutRootPath}
+            1 = {$plugin.tx_nb_basetemplate.view.layoutRootPath}
         }
     }
     settings {
-        overrideParserVariables = {$plugin.nb_basetemplate.settings.overrideParserVariables}
-        cssSourceMapping = {$plugin.nb_basetemplate.settings.cssSourceMapping}
+        overrideParserVariables = {$plugin.tx_nb_basetemplate.settings.overrideParserVariables}
+        cssSourceMapping = {$plugin.tx_nb_basetemplate.settings.cssSourceMapping}
     }
 }

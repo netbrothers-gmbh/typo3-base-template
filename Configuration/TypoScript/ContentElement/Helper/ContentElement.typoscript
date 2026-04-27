@@ -22,15 +22,15 @@ lib.contentElement {
     templateName = Default
     templateRootPaths {
         0 = EXT:nb_basetemplate/Resources/Private/Templates/ContentElements/
-        10 = {$plugin.nb_basetemplate_contentelements.view.templateRootPath}
+        10 = {$plugin.tx_nb_basetemplate_contentelements.view.templateRootPath}
     }
     partialRootPaths {
         0 = EXT:nb_basetemplate/Resources/Private/Partials/ContentElements/
-        10 = {$plugin.nb_basetemplate_contentelements.view.partialRootPath}
+        10 = {$plugin.tx_nb_basetemplate_contentelements.view.partialRootPath}
     }
     layoutRootPaths {
         0 = EXT:nb_basetemplate/Resources/Private/Layouts/ContentElements/
-        10 = {$plugin.nb_basetemplate_contentelements.view.layoutRootPath}
+        10 = {$plugin.tx_nb_basetemplate_contentelements.view.layoutRootPath}
     }
 
     dataProcessing {
@@ -65,42 +65,42 @@ lib.contentElement {
 
     settings {
         header {
-            defaultHeaderType = {$plugin.nb_basetemplate_contentelements.header.defaultHeaderType}
-            class = {$plugin.nb_basetemplate_contentelements.header.class}
+            defaultHeaderType = {$plugin.tx_nb_basetemplate_contentelements.header.defaultHeaderType}
+            class = {$plugin.tx_nb_basetemplate_contentelements.header.class}
             date {
-                format = {$plugin.nb_basetemplate_contentelements.header.date.format}
+                format = {$plugin.tx_nb_basetemplate_contentelements.header.date.format}
             }
         }
         subheader {
-            class = {$plugin.nb_basetemplate_contentelements.subheader.class}
+            class = {$plugin.tx_nb_basetemplate_contentelements.subheader.class}
         }
         lightbox {
-            cssClass = {$plugin.nb_basetemplate_contentelements.lightbox.cssClass}
-            prefix = {$plugin.nb_basetemplate_contentelements.lightbox.prefix}
+            cssClass = {$plugin.tx_nb_basetemplate_contentelements.lightbox.cssClass}
+            prefix = {$plugin.tx_nb_basetemplate_contentelements.lightbox.prefix}
             image {
-                maxHeight = {$plugin.nb_basetemplate_contentelements.lightbox.image.maxHeight}
-                maxWidth = {$plugin.nb_basetemplate_contentelements.lightbox.image.maxWidth}
+                maxHeight = {$plugin.tx_nb_basetemplate_contentelements.lightbox.image.maxHeight}
+                maxWidth = {$plugin.tx_nb_basetemplate_contentelements.lightbox.image.maxWidth}
             }
         }
         media {
             additionalConfig {
-                autoplay = {$plugin.nb_basetemplate_contentelements.media.additionalConfig.autoplay}
-                controls = {$plugin.nb_basetemplate_contentelements.media.additionalConfig.controls}
-                loop = {$plugin.nb_basetemplate_contentelements.media.additionalConfig.loop}
-                enablejsapi = {$plugin.nb_basetemplate_contentelements.media.additionalConfig.enablejsapi}
-                showinfo = {$plugin.nb_basetemplate_contentelements.media.additionalConfig.showinfo}
-                relatedVideos = {$plugin.nb_basetemplate_contentelements.media.additionalConfig.relatedVideos}
-                modestbranding = {$plugin.nb_basetemplate_contentelements.media.additionalConfig.modestbranding}
-                no-cookie = {$plugin.nb_basetemplate_contentelements.media.additionalConfig.nocookie}
+                autoplay = {$plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.autoplay}
+                controls = {$plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.controls}
+                loop = {$plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.loop}
+                enablejsapi = {$plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.enablejsapi}
+                showinfo = {$plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.showinfo}
+                relatedVideos = {$plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.relatedVideos}
+                modestbranding = {$plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.modestbranding}
+                no-cookie = {$plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.nocookie}
             }
         }
         gallery {
             columns {
                 1 {
-                    class = {$plugin.nb_basetemplate_contentelements.gallery.columns.1.class}
+                    class = {$plugin.tx_nb_basetemplate_contentelements.gallery.columns.1.class}
                 }
                 2 {
-                    class = {$plugin.nb_basetemplate_contentelements.gallery.columns.2.class}
+                    class = {$plugin.tx_nb_basetemplate_contentelements.gallery.columns.2.class}
                     multiplier {
                         default = 0.5
                         xlarge = 0.5
@@ -119,7 +119,7 @@ lib.contentElement {
                     }
                 }
                 3 {
-                    class = {$plugin.nb_basetemplate_contentelements.gallery.columns.3.class}
+                    class = {$plugin.tx_nb_basetemplate_contentelements.gallery.columns.3.class}
                     multiplier {
                         default = 0.3333
                         xlarge = 0.3333
@@ -138,7 +138,7 @@ lib.contentElement {
                     }
                 }
                 4 {
-                    class = {$plugin.nb_basetemplate_contentelements.gallery.columns.4.class}
+                    class = {$plugin.tx_nb_basetemplate_contentelements.gallery.columns.4.class}
                     multiplier {
                         default = 0.25
                         xlarge = 0.25
@@ -157,7 +157,7 @@ lib.contentElement {
                     }
                 }
                 5 {
-                    class = {$plugin.nb_basetemplate_contentelements.gallery.columns.5.class}
+                    class = {$plugin.tx_nb_basetemplate_contentelements.gallery.columns.5.class}
                     multiplier {
                         default = 0.2
                         xlarge = 0.2
@@ -176,7 +176,7 @@ lib.contentElement {
                     }
                 }
                 6 {
-                    class = {$plugin.nb_basetemplate_contentelements.gallery.columns.6.class}
+                    class = {$plugin.tx_nb_basetemplate_contentelements.gallery.columns.6.class}
                     multiplier {
                         default = 0.1666
                         xlarge = 0.16666
@@ -667,57 +667,57 @@ lib.contentElement {
         }
         menuthumbnail {
             title {
-                crop = {$plugin.nb_basetemplate_contentelements.menu_thumbnail.title.crop}
+                crop = {$plugin.tx_nb_basetemplate_contentelements.menu_thumbnail.title.crop}
             }
             subtitle {
-                crop = {$plugin.nb_basetemplate_contentelements.menu_thumbnail.subtitle.crop}
+                crop = {$plugin.tx_nb_basetemplate_contentelements.menu_thumbnail.subtitle.crop}
             }
         }
         menucard {
             icon {
-                enable = {$plugin.nb_basetemplate_contentelements.menu_card.icon.enable}
-                height = {$plugin.nb_basetemplate_contentelements.menu_card.icon.height}
-                width = {$plugin.nb_basetemplate_contentelements.menu_card.icon.width}
+                enable = {$plugin.tx_nb_basetemplate_contentelements.menu_card.icon.enable}
+                height = {$plugin.tx_nb_basetemplate_contentelements.menu_card.icon.height}
+                width = {$plugin.tx_nb_basetemplate_contentelements.menu_card.icon.width}
             }
             title {
-                crop = {$plugin.nb_basetemplate_contentelements.menu_card.title.crop}
+                crop = {$plugin.tx_nb_basetemplate_contentelements.menu_card.title.crop}
             }
             subtitle {
-                crop = {$plugin.nb_basetemplate_contentelements.menu_card.subtitle.crop}
+                crop = {$plugin.tx_nb_basetemplate_contentelements.menu_card.subtitle.crop}
             }
             abstract {
-                crop = {$plugin.nb_basetemplate_contentelements.menu_card.abstract.crop}
+                crop = {$plugin.tx_nb_basetemplate_contentelements.menu_card.abstract.crop}
             }
         }
         texticon {
             icon {
                 default {
-                    height = {$plugin.nb_basetemplate_contentelements.texticon.icon.default.height}
-                    width = {$plugin.nb_basetemplate_contentelements.texticon.icon.default.width}
+                    height = {$plugin.tx_nb_basetemplate_contentelements.texticon.icon.default.height}
+                    width = {$plugin.tx_nb_basetemplate_contentelements.texticon.icon.default.width}
                 }
                 medium {
-                    height = {$plugin.nb_basetemplate_contentelements.texticon.icon.medium.height}
-                    width = {$plugin.nb_basetemplate_contentelements.texticon.icon.medium.width}
+                    height = {$plugin.tx_nb_basetemplate_contentelements.texticon.icon.medium.height}
+                    width = {$plugin.tx_nb_basetemplate_contentelements.texticon.icon.medium.width}
                 }
                 large {
-                    height = {$plugin.nb_basetemplate_contentelements.texticon.icon.large.height}
-                    width = {$plugin.nb_basetemplate_contentelements.texticon.icon.large.width}
+                    height = {$plugin.tx_nb_basetemplate_contentelements.texticon.icon.large.height}
+                    width = {$plugin.tx_nb_basetemplate_contentelements.texticon.icon.large.width}
                 }
                 awesome {
-                    height = {$plugin.nb_basetemplate_contentelements.texticon.icon.awesome.height}
-                    width = {$plugin.nb_basetemplate_contentelements.texticon.icon.awesome.width}
+                    height = {$plugin.tx_nb_basetemplate_contentelements.texticon.icon.awesome.height}
+                    width = {$plugin.tx_nb_basetemplate_contentelements.texticon.icon.awesome.width}
                 }
             }
         }
         timeline {
             date {
-                format = {$plugin.nb_basetemplate_contentelements.timeline.date.format}
+                format = {$plugin.tx_nb_basetemplate_contentelements.timeline.date.format}
             }
         }
         uploads {
             preview {
-                height = {$plugin.nb_basetemplate_contentelements.uploads.preview.height}
-                width = {$plugin.nb_basetemplate_contentelements.uploads.preview.width}
+                height = {$plugin.tx_nb_basetemplate_contentelements.uploads.preview.height}
+                width = {$plugin.tx_nb_basetemplate_contentelements.uploads.preview.width}
             }
         }
     }

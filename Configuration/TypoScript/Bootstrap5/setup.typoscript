@@ -1,4 +1,4 @@
-[{$plugin.nb_basetemplate.loadBootstrap} == 1]
+[{$plugin.tx_nb_basetemplate.loadBootstrap} == 1]
 page {
     includeCSS {
         theme = EXT:nb_basetemplate/Resources/Public/Css/theme.css

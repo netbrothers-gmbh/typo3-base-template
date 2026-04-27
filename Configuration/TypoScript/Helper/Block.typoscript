@@ -22,15 +22,15 @@ lib.block {
     }
     templateRootPaths {
         0 = EXT:nb_basetemplate/Resources/Private/Templates/Blocks/
-        10 = {$plugin.nb_basetemplate_blocks.view.templateRootPath}
+        10 = {$plugin.tx_nb_basetemplate_blocks.view.templateRootPath}
     }
     partialRootPaths {
         0 = EXT:nb_basetemplate/Resources/Private/Partials/Blocks/
-        10 = {$plugin.nb_basetemplate_blocks.view.partialRootPath}
+        10 = {$plugin.tx_nb_basetemplate_blocks.view.partialRootPath}
     }
     layoutRootPaths {
         0 = EXT:nb_basetemplate/Resources/Private/Layouts/Blocks/
-        10 = {$plugin.nb_basetemplate_blocks.view.layoutRootPath}
+        10 = {$plugin.tx_nb_basetemplate_blocks.view.layoutRootPath}
     }
 
     dataProcessing {

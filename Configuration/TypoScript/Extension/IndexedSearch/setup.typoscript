@@ -5,15 +5,15 @@ plugin.tx_indexedsearch {
     view {
         templateRootPaths {
             20 = EXT:nb_basetemplate/Resources/Private/Templates/IndexedSearch/
-            21 = {$plugin.nb_basetemplate.view.templateRootPath}IndexedSearch/
+            21 = {$plugin.tx_nb_basetemplate.view.templateRootPath}IndexedSearch/
         }
         partialRootPaths {
             20 = EXT:nb_basetemplate/Resources/Private/Partials/IndexedSearch/
-            21 = {$plugin.nb_basetemplate.view.partialRootPath}IndexedSearch/
+            21 = {$plugin.tx_nb_basetemplate.view.partialRootPath}IndexedSearch/
         }
         layoutRootPaths {
             20 = EXT:nb_basetemplate/Resources/Private/Layouts/IndexedSearch/
-            21 = {$plugin.nb_basetemplate.view.layoutRootPath}IndexedSearch/
+            21 = {$plugin.tx_nb_basetemplate.view.layoutRootPath}IndexedSearch/
         }
     }
 }

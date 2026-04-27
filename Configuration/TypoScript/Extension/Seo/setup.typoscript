@@ -5,15 +5,15 @@ plugin.tx_seo {
     view {
         templateRootPaths {
             20 = EXT:nb_basetemplate/Resources/Private/Templates/Seo/
-            21 = {$plugin.nb_basetemplate.view.templateRootPath}Seo/
+            21 = {$plugin.tx_nb_basetemplate.view.templateRootPath}Seo/
         }
         partialRootPaths {
             20 = EXT:nb_basetemplate/Resources/Private/Partials/Seo/
-            21 = {$plugin.nb_basetemplate.view.partialRootPath}Seo/
+            21 = {$plugin.tx_nb_basetemplate.view.partialRootPath}Seo/
         }
         layoutRootPaths {
             20 = EXT:nb_basetemplate/Resources/Private/Layouts/Seo/
-            21 = {$plugin.nb_basetemplate.view.layoutRootPath}Seo/
+            21 = {$plugin.tx_nb_basetemplate.view.layoutRootPath}Seo/
         }
     }
 }

@@ -313,14 +313,14 @@ config {
     headerComment = Based on the TYPO3 Base Template by NetBrothers - https://netbrothers.de/
 }
 
-plugin.nb_basetemplate.settings {
+plugin.tx_nb_basetemplate.settings {
     # cat=nb basetemplate: css parser/190/100; type=boolean; label=Override Parser Variables: If enabled the variables defined in your SCSS files will be overridden with the ones defined as TypoScript Constants.
     overrideParserVariables = 1
     # cat=nb basetemplate: css parser/190/110; type=boolean; label=CSS source mapping: Create a CSS source map useful to debug CSS in browser developer tools. Note: CSS compression will be disabled.
     cssSourceMapping = 0
 }
 
-plugin.nb_basetemplate_blocks.view {
+plugin.tx_nb_basetemplate_blocks.view {
     # cat=nb basetemplate: blocks/201/layoutRootPath; type=string; label=Layout Root Path: Path to layouts
     layoutRootPath = EXT:nb_basetemplate/Resources/Private/Layouts/Blocks/
     # cat=nb basetemplate: blocks/201/partialRootPath; type=string; label=Partial Root Path: Path to partials
@@ -329,7 +329,7 @@ plugin.nb_basetemplate_blocks.view {
     templateRootPath = EXT:nb_basetemplate/Resources/Private/Templates/Blocks/
 }
 
-plugin.nb_basetemplate.view {
+plugin.tx_nb_basetemplate.view {
     # cat=nb basetemplate: templates/200/layoutRootPath; type=string; label=Layout Root Path: Path to layouts
     layoutRootPath = EXT:nb_basetemplate/Resources/Private/Layouts/
     # cat=nb basetemplate: templates/200/partialRootPath; type=string; label=Partial Root Path: Path to partials

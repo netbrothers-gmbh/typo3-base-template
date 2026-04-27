@@ -15,7 +15,7 @@ tt_content.menu_card_list {
                 10 {
                     references.fieldName = thumbnail
                     if {
-                        isTrue = {$plugin.nb_basetemplate_contentelements.menu_card.thumbnail.enable}
+                        isTrue = {$plugin.tx_nb_basetemplate_contentelements.menu_card.thumbnail.enable}
                     }
                 }
                 1628754217 = NetBrothers\TYPO3BaseTemplate\DataProcessing\IconsDataProcessor
@@ -25,7 +25,7 @@ tt_content.menu_card_list {
                     iconFileFieldName = nav_icon
                     as = icon
                     if {
-                        isTrue = {$plugin.nb_basetemplate_contentelements.menu_card.icon.enable}
+                        isTrue = {$plugin.tx_nb_basetemplate_contentelements.menu_card.icon.enable}
                     }
                 }
             }
