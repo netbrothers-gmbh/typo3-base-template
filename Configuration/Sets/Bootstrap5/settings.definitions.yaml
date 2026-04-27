@@ -3,10 +3,15 @@ categories:
     label: 'TYPO3 Base Template'
 
 settings:
-  # Loading
-  plugin.tx_nb_basetemplate.loadBootstrap:
-    label: 'Toggle Loading of Bootstrap'
-    description: 'Lorem descriptum'
+  plugin.tx_nb_basetemplate.disableBootstrapCss:
+    label: 'Disable loading of Bootstrap CSS'
+    description: 'If you activate this, the Bootstrap CSS will not be loaded. Useful if you provide your own custom built version of Bootstrap.'
     category: TYPO3BaseTemplate
     type: bool
-    default: true
+    default: false
+  plugin.tx_nb_basetemplate.disableBootstrapBundleJs:
+    label: 'Disable loading of Bootstrap Bundle JS'
+    description: 'If you activate this, the Bootstrap Bundle JS will not be loaded. Useful if you provide your own custom built version of Bootstrap.'
+    category: TYPO3BaseTemplate
+    type: bool
+    default: false

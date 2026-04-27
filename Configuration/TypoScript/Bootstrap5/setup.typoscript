@@ -1,10 +1,16 @@
-[{$plugin.tx_nb_basetemplate.loadBootstrap} == 1]
+
+[{$plugin.tx_nb_basetemplate.disableBootstrapCss} != 1]
 page {
-    includeCSS {
-        theme = EXT:nb_basetemplate/Resources/Public/Css/theme.css
+    includeCSSLibs {
+        bootstrap_css = EXT:nb_basetemplate/Resources/Public/Css/theme.css
     }
+}
+[END]
+
+[{$plugin.tx_nb_basetemplate.disableBootstrapBundleJs} != 1]
+page {
     includeJSFooterlibs {
-        bootstrap = EXT:nb_basetemplate/Resources/Public/JavaScript/bootstrap.bundle.min.js
+        bootstrap_bundle_js = EXT:nb_basetemplate/Resources/Public/JavaScript/bootstrap.bundle.min.js
     }
 }
 [END]
