@@ -666,52 +666,52 @@ settings:
     default: 'EXT:nb_basetemplate/Resources/Private/Templates/Page/'
 
   # Template Block
-  plugin.nb_basetemplate_blocks.view.layoutRootPath:
+  plugin.tx_nb_basetemplate_blocks.view.layoutRootPath:
     label: 'Layout Root Path'
     category: TYPO3BaseTemplate.templates.block
     type: string
     default: 'EXT:nb_basetemplate/Resources/Private/Layouts/Blocks/'
 
-  plugin.nb_basetemplate_blocks.view.partialRootPath:
+  plugin.tx_nb_basetemplate_blocks.view.partialRootPath:
     label: 'Partial Root Path'
     category: TYPO3BaseTemplate.templates.block
     type: string
     default: 'EXT:nb_basetemplate/Resources/Private/Partials/Blocks/'
 
-  plugin.nb_basetemplate_blocks.view.templateRootPath:
+  plugin.tx_nb_basetemplate_blocks.view.templateRootPath:
     label: 'Template Root Path'
     category: TYPO3BaseTemplate.templates.block
     type: string
     default: 'EXT:nb_basetemplate/Resources/Private/Templates/Blocks/'
 
   # Template Plugin
-  plugin.nb_basetemplate.view.layoutRootPath:
+  plugin.tx_nb_basetemplate.view.layoutRootPath:
     label: 'Layout Root Path'
     category: TYPO3BaseTemplate.templates.plugin
     type: string
     default: 'EXT:nb_basetemplate/Resources/Private/Layouts/'
 
-  plugin.nb_basetemplate.view.partialRootPath:
+  plugin.tx_nb_basetemplate.view.partialRootPath:
     label: 'Partial Root Path'
     category: TYPO3BaseTemplate.templates.plugin
     type: string
     default: 'EXT:nb_basetemplate/Resources/Private/Partials/'
 
-  plugin.nb_basetemplate.view.templateRootPath:
+  plugin.tx_nb_basetemplate.view.templateRootPath:
     label: 'Template Root Path'
     category: TYPO3BaseTemplate.templates.plugin
     type: string
     default: 'EXT:nb_basetemplate/Resources/Private/Templates/'
 
   # Settings
-  plugin.nb_basetemplate.settings.cssSourceMapping:
+  plugin.tx_nb_basetemplate.settings.cssSourceMapping:
     label: 'CSS source mapping'
     description: 'Create a CSS source map useful to debug CSS in browser developer tools. Note: CSS compression will be disabled.'
     category: TYPO3BaseTemplate.settings
     type: bool
     default: false
 
-  plugin.nb_basetemplate.settings.overrideParserVariables:
+  plugin.tx_nb_basetemplate.settings.overrideParserVariables:
     label: 'Override Parser Variables'
     description: 'If enabled the variables defined in your SCSS files will be overridden with the ones defined as Site Settings'
     category: TYPO3BaseTemplate.settings

@@ -41,21 +41,21 @@ categories:
 settings:
 
   # Templates
-  plugin.nb_basetemplate_contentelements.view.layoutRootPath:
+  plugin.tx_nb_basetemplate_contentelements.view.layoutRootPath:
     label: 'Layout Root Path'
     description: 'Path to layouts'
     category: TYPO3BaseTemplate.content-elements.templates
     type: string
     default: 'EXT:nb_basetemplate/Resources/Private/Layouts/ContentElement/'
 
-  plugin.nb_basetemplate_contentelements.view.partialRootPath:
+  plugin.tx_nb_basetemplate_contentelements.view.partialRootPath:
     label: 'Partial Root Path'
     description: 'Path to partials'
     category: TYPO3BaseTemplate.content-elements.templates
     type: string
     default: 'EXT:nb_basetemplate/Resources/Private/Partials/ContentElement/'
 
-  plugin.nb_basetemplate_contentelements.view.templateRootPath:
+  plugin.tx_nb_basetemplate_contentelements.view.templateRootPath:
     label: 'Template Root Path'
     description: 'Path to templates'
     category: TYPO3BaseTemplate.content-elements.templates
@@ -63,257 +63,257 @@ settings:
     default: 'EXT:nb_basetemplate/Resources/Private/Templates/ContentElement/'
 
   # Header
-  plugin.nb_basetemplate_contentelements.header.defaultHeaderType:
+  plugin.tx_nb_basetemplate_contentelements.header.defaultHeaderType:
     label: 'Default Header type'
     description: 'Enter the number of the header layout to be used by default [1-5]'
     category: TYPO3BaseTemplate.content-elements.header
     type: number
     default: 2
 
-  plugin.nb_basetemplate_contentelements.header.class:
+  plugin.tx_nb_basetemplate_contentelements.header.class:
     label: 'Default Header class'
     category: TYPO3BaseTemplate.content-elements.header
     type: string
     default: 'element-header'
 
-  plugin.nb_basetemplate_contentelements.header.date.format:
+  plugin.tx_nb_basetemplate_contentelements.header.date.format:
     label: 'Header date format'
     category: TYPO3BaseTemplate.content-elements.header
     type: string
     default: '%B %e, %Y'
 
   # Subheader
-  plugin.nb_basetemplate_contentelements.subheader.class:
+  plugin.tx_nb_basetemplate_contentelements.subheader.class:
     label: 'Default Subheader class'
     category: TYPO3BaseTemplate.content-elements.subheader
     type: string
     default: 'element-subheader'
 
   # Lightbox
-  plugin.nb_basetemplate_contentelements.lightbox.cssClass:
+  plugin.tx_nb_basetemplate_contentelements.lightbox.cssClass:
     label: 'CSS Class'
     category: TYPO3BaseTemplate.content-elements.lightbox
     type: string
     default: 'lightbox'
 
-  plugin.nb_basetemplate_contentelements.lightbox.prefix:
+  plugin.tx_nb_basetemplate_contentelements.lightbox.prefix:
     label: 'Group Prefix'
     category: TYPO3BaseTemplate.content-elements.lightbox
     type: string
     default: 'lightbox-group'
 
-  plugin.nb_basetemplate_contentelements.lightbox.image.maxHeight:
+  plugin.tx_nb_basetemplate_contentelements.lightbox.image.maxHeight:
     label: 'Max Image Hight'
     category: TYPO3BaseTemplate.content-elements.lightbox
     type: int
     default: 1200
 
-  plugin.nb_basetemplate_contentelements.lightbox.image.maxWidth:
+  plugin.tx_nb_basetemplate_contentelements.lightbox.image.maxWidth:
     label: 'Max Image Width'
     category: TYPO3BaseTemplate.content-elements.lightbox
     type: int
     default: 1200
 
   # Media
-  plugin.nb_basetemplate_contentelements.media.additionalConfig.autoplay:
+  plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.autoplay:
     label: 'Autoplay'
     category: TYPO3BaseTemplate.content-elements.media
     type: bool
     default: false
 
-  plugin.nb_basetemplate_contentelements.media.additionalConfig.controls:
+  plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.controls:
     label: 'Controls'
     category: TYPO3BaseTemplate.content-elements.media
     type: bool
     default: true
 
-  plugin.nb_basetemplate_contentelements.media.additionalConfig.loop:
+  plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.loop:
     label: 'Loop'
     category: TYPO3BaseTemplate.content-elements.media
     type: bool
     default: false
 
-  plugin.nb_basetemplate_contentelements.media.additionalConfig.enablejsapi:
+  plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.enablejsapi:
     label: 'Enable JavaScript API'
     category: TYPO3BaseTemplate.content-elements.media
     type: bool
     default: true
 
-  plugin.nb_basetemplate_contentelements.media.additionalConfig.showinfo:
+  plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.showinfo:
     label: 'Show Info'
     category: TYPO3BaseTemplate.content-elements.media
     type: bool
     default: false
 
-  plugin.nb_basetemplate_contentelements.media.additionalConfig.relatedVideos:
+  plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.relatedVideos:
     label: 'Related Videos'
     category: TYPO3BaseTemplate.content-elements.media
     type: bool
     default: false
 
-  plugin.nb_basetemplate_contentelements.media.additionalConfig.modestbranding:
+  plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.modestbranding:
     label: 'Modest Branding'
     category: TYPO3BaseTemplate.content-elements.media
     type: bool
     default: false
 
-  plugin.nb_basetemplate_contentelements.media.additionalConfig.nocookie:
+  plugin.tx_nb_basetemplate_contentelements.media.additionalConfig.nocookie:
     label: 'No Cookie'
     category: TYPO3BaseTemplate.content-elements.media
     type: bool
     default: true
 
   # Gallery
-  plugin.nb_basetemplate_contentelements.gallery.columns.1.class:
+  plugin.tx_nb_basetemplate_contentelements.gallery.columns.1.class:
     label: 'Item CSS Class for 1 column'
     category: TYPO3BaseTemplate.content-elements.gallery
     type: string
     default: 'gallery-item-size-1'
 
-  plugin.nb_basetemplate_contentelements.gallery.columns.2.class:
+  plugin.tx_nb_basetemplate_contentelements.gallery.columns.2.class:
     label: 'Item CSS Class for 2 columns'
     category: TYPO3BaseTemplate.content-elements.gallery
     type: string
     default: 'gallery-item-size-2'
 
-  plugin.nb_basetemplate_contentelements.gallery.columns.3.class:
+  plugin.tx_nb_basetemplate_contentelements.gallery.columns.3.class:
     label: 'Item CSS Class for 3 columns'
     category: TYPO3BaseTemplate.content-elements.gallery
     type: string
     default: 'gallery-item-size-3'
 
-  plugin.nb_basetemplate_contentelements.gallery.columns.4.class:
+  plugin.tx_nb_basetemplate_contentelements.gallery.columns.4.class:
     label: 'Item CSS Class for 4 columns'
     category: TYPO3BaseTemplate.content-elements.gallery
     type: string
     default: 'gallery-item-size-4'
 
-  plugin.nb_basetemplate_contentelements.gallery.columns.5.class:
+  plugin.tx_nb_basetemplate_contentelements.gallery.columns.5.class:
     label: 'Item CSS Class for 5 columns'
     category: TYPO3BaseTemplate.content-elements.gallery
     type: string
     default: 'gallery-item-size-5'
 
-  plugin.nb_basetemplate_contentelements.gallery.columns.6.class:
+  plugin.tx_nb_basetemplate_contentelements.gallery.columns.6.class:
     label: 'Item CSS Class for 6 columns'
     category: TYPO3BaseTemplate.content-elements.gallery
     type: string
     default: 'gallery-item-size-6'
 
   # Menu Thumbnail
-  plugin.nb_basetemplate_contentelements.menu_thumbnail.title.crop:
+  plugin.tx_nb_basetemplate_contentelements.menu_thumbnail.title.crop:
     label: 'Crop Title'
     category: TYPO3BaseTemplate.content-elements.menu-thumbnail
     type: int
     default: 100
 
-  plugin.nb_basetemplate_contentelements.menu_thumbnail.subtitle.crop:
+  plugin.tx_nb_basetemplate_contentelements.menu_thumbnail.subtitle.crop:
     label: 'Crop Subtitle'
     category: TYPO3BaseTemplate.content-elements.menu-thumbnail
     type: int
     default: 100
 
   # Menu Card
-  plugin.nb_basetemplate_contentelements.menu_card.title.crop:
+  plugin.tx_nb_basetemplate_contentelements.menu_card.title.crop:
     label: 'Crop Title'
     category: TYPO3BaseTemplate.content-elements.menu-card
     type: int
     default: 100
 
-  plugin.nb_basetemplate_contentelements.menu_card.subtitle.crop:
+  plugin.tx_nb_basetemplate_contentelements.menu_card.subtitle.crop:
     label: 'Crop Subtitle'
     category: TYPO3BaseTemplate.content-elements.menu-card
     type: int
     default: 100
 
-  plugin.nb_basetemplate_contentelements.menu_card.abstract.crop:
+  plugin.tx_nb_basetemplate_contentelements.menu_card.abstract.crop:
     label: 'Crop Abstract'
     category: TYPO3BaseTemplate.content-elements.menu-card
     type: int
     default: 250
 
-  plugin.nb_basetemplate_contentelements.menu_card.icon.enable:
+  plugin.tx_nb_basetemplate_contentelements.menu_card.icon.enable:
     label: 'Enable Icon'
     category: TYPO3BaseTemplate.content-elements.menu-card
     type: bool
     default: false
 
-  plugin.nb_basetemplate_contentelements.menu_card.icon.height:
+  plugin.tx_nb_basetemplate_contentelements.menu_card.icon.height:
     label: 'Icon Height'
     category: TYPO3BaseTemplate.content-elements.menu-card
     type: string
     default: '32'
 
-  plugin.nb_basetemplate_contentelements.menu_card.icon.width:
+  plugin.tx_nb_basetemplate_contentelements.menu_card.icon.width:
     label: 'Icon Width'
     category: TYPO3BaseTemplate.content-elements.menu-card
     type: string
     default: '32c'
 
   # Text and Icon
-  plugin.nb_basetemplate_contentelements.texticon.icon.default.height:
+  plugin.tx_nb_basetemplate_contentelements.texticon.icon.default.height:
     label: 'Default Icon Height'
     category: TYPO3BaseTemplate.content-elements.text-and-icon
     type: string
     default: '32'
 
-  plugin.nb_basetemplate_contentelements.texticon.icon.default.width:
+  plugin.tx_nb_basetemplate_contentelements.texticon.icon.default.width:
     label: 'Default Icon Width'
     category: TYPO3BaseTemplate.content-elements.text-and-icon
     type: string
     default: '32'
 
-  plugin.nb_basetemplate_contentelements.texticon.icon.medium.height:
+  plugin.tx_nb_basetemplate_contentelements.texticon.icon.medium.height:
     label: 'Medium Icon Height'
     category: TYPO3BaseTemplate.content-elements.text-and-icon
     type: string
     default: '48'
 
-  plugin.nb_basetemplate_contentelements.texticon.icon.medium.width:
+  plugin.tx_nb_basetemplate_contentelements.texticon.icon.medium.width:
     label: 'Medium Icon Width'
     category: TYPO3BaseTemplate.content-elements.text-and-icon
     type: string
     default: '48'
 
-  plugin.nb_basetemplate_contentelements.texticon.icon.large.height:
+  plugin.tx_nb_basetemplate_contentelements.texticon.icon.large.height:
     label: 'Large Icon Height'
     category: TYPO3BaseTemplate.content-elements.text-and-icon
     type: string
     default: '64'
 
-  plugin.nb_basetemplate_contentelements.texticon.icon.large.width:
+  plugin.tx_nb_basetemplate_contentelements.texticon.icon.large.width:
     label: 'Large Icon Width'
     category: TYPO3BaseTemplate.content-elements.text-and-icon
     type: string
     default: '64'
 
-  plugin.nb_basetemplate_contentelements.texticon.icon.awesome.height:
+  plugin.tx_nb_basetemplate_contentelements.texticon.icon.awesome.height:
     label: 'Awesome Icon Height'
     category: TYPO3BaseTemplate.content-elements.text-and-icon
     type: string
     default: '80'
 
-  plugin.nb_basetemplate_contentelements.texticon.icon.awesome.width:
+  plugin.tx_nb_basetemplate_contentelements.texticon.icon.awesome.width:
     label: 'Awesome Icon Width'
     category: TYPO3BaseTemplate.content-elements.text-and-icon
     type: string
     default: '80'
 
   # Timeline
-  plugin.nb_basetemplate_contentelements.timeline.date.format:
+  plugin.tx_nb_basetemplate_contentelements.timeline.date.format:
     label: 'Date Format'
     category: TYPO3BaseTemplate.content-elements.timeline
     type: string
     default: '%B %e, %Y - %H:%M'
 
   # Uploads
-  plugin.nb_basetemplate_contentelements.uploads.preview.height:
+  plugin.tx_nb_basetemplate_contentelements.uploads.preview.height:
     label: 'Preview Height'
     category: TYPO3BaseTemplate.content-elements.uploads
     type: string
     default: '100c'
 
-  plugin.nb_basetemplate_contentelements.uploads.preview.width:
+  plugin.tx_nb_basetemplate_contentelements.uploads.preview.width:
     label: 'Preview Width'
     category: TYPO3BaseTemplate.content-elements.uploads
     type: string
