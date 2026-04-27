@@ -96,7 +96,6 @@ class PaginateViewHelper extends AbstractTagBasedViewHelper
         if ($renderingContext->hasAttribute(ServerRequestInterface::class)) {
             return $renderingContext->getAttribute(ServerRequestInterface::class);
         } elseif ($renderingContext instanceof RenderingContext) {
-            /** @phpstan-ignore-next-line */
             return $renderingContext->getRequest();
         }
 

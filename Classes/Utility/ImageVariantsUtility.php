@@ -119,8 +119,8 @@ class ImageVariantsUtility
             ];
         }
 
-        // @phpstan-ignore-next-line
-        if (!isset($workingSizes['1'])) {
+        // The offset '1' may very well exist, doesn't it?
+        if (!isset($workingSizes['1'])) { // @phpstan-ignore isset.offset
             $workingSizes['1'] = ['multiplier' => 1];
         }
         ksort($workingSizes);

@@ -11,7 +11,6 @@ namespace NetBrothers\TYPO3BaseTemplate\DataProcessing;
 
 use TYPO3\CMS\Core\Resource\File;
 use TYPO3\CMS\Core\Resource\FileReference;
-use TYPO3\CMS\Core\Resource\ProcessedFile;
 use TYPO3\CMS\Core\Utility\CsvUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\DataProcessing\FilesProcessor;
@@ -47,7 +46,6 @@ class CsvFileProcessor extends FilesProcessor
 
         foreach ($files as $key => $value) {
             if (is_object($value) && ($value instanceof FileReference || $value instanceof File)) {
-                /** @var ProcessedFile $value */
                 if ($value->getExtension() !== 'csv') {
                     unset($files[$key]);
                 } else {

@@ -103,10 +103,8 @@ class PaginateViewHelper extends AbstractViewHelper
     {
         $setup = $this->getConfigurationManager()->getConfiguration(ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
 
-        /** @phpstan-ignore-next-line */
         $context = GeneralUtility::makeInstance(RenderingContextFactory::class)->create([], $request);
         if ((new \ReflectionMethod(RenderingContextFactory::class, 'create'))->getNumberOfParameters() === 1) {
-            /** @phpstan-ignore-next-line */
             $context->setRequest($request);
         }
 
@@ -156,7 +154,6 @@ class PaginateViewHelper extends AbstractViewHelper
         if ($renderingContext->hasAttribute(ServerRequestInterface::class)) {
             return $renderingContext->getAttribute(ServerRequestInterface::class);
         } elseif ($renderingContext instanceof RenderingContext) {
-            /** @phpstan-ignore-next-line */
             return $renderingContext->getRequest();
         }
 
