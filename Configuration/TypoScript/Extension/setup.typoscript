@@ -4,14 +4,6 @@
     @import 'EXT:nb_basetemplate/Configuration/TypoScript/Extension/Form/setup.typoscript'
 [end]
 
-[extension.isLoaded('indexed_search') == 1]
-    @import 'EXT:nb_basetemplate/Configuration/TypoScript/Extension/IndexedSearch/setup.typoscript'
-[end]
-
-[extension.isLoaded('indexed_search') == 1]
-    @import 'EXT:nb_basetemplate/Configuration/TypoScript/Extension/IndexedSearch/setup.typoscript'
-[end]
-
 [extension.isLoaded('seo') == 1]
     @import 'EXT:nb_basetemplate/Configuration/TypoScript/Extension/Seo/setup.typoscript'
 [end]
