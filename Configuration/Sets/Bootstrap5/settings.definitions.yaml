@@ -3,3 +3,10 @@ categories:
     label: 'TYPO3 Base Template'
 
 settings:
+  # Loading
+  plugin.tx_nb_basetemplate.loadBootstrap:
+    label: 'Toggle Loading of Bootstrap'
+    description: 'Lorem descriptum'
+    category: TYPO3BaseTemplate
+    type: bool
+    default: true
