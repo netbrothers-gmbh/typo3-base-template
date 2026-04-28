@@ -14,13 +14,6 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['menu_thumbnail_dir'] ?? fa
     $GLOBALS['TCA']['tt_content']['types']['menu_thumbnail_dir'] = [];
 }
 
-// Add content element PageTSConfig
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'nb_basetemplate',
-    'Configuration/TsConfig/Page/ContentElement/Element/MenuThumbnailDir.tsconfig',
-    'TYPO3 Base Template Content Element: Menu Thumbnails of subpages'
-);
-
 // Add content element to selector list
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',

@@ -14,13 +14,6 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['icon_group'] ?? false)) {
     $GLOBALS['TCA']['tt_content']['types']['icon_group'] = [];
 }
 
-// Add content element PageTSConfig
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'nb_basetemplate',
-    'Configuration/TsConfig/Page/ContentElement/Element/IconGroup.tsconfig',
-    'TYPO3 Base Template Content Element: Icon Group'
-);
-
 // Add content element to selector list
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',

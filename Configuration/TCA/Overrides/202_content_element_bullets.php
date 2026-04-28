@@ -8,10 +8,3 @@
  */
 
 defined('TYPO3') or die('Access denied.');
-
-// Add content element PageTSConfig
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'nb_basetemplate',
-    'Configuration/TsConfig/Page/ContentElement/Element/Bullets.tsconfig',
-    'TYPO3 Base Template Content Element: Bullet List'
-);

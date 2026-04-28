@@ -14,13 +14,6 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['accordion'] ?? false)) {
     $GLOBALS['TCA']['tt_content']['types']['accordion'] = [];
 }
 
-// Add content element PageTSConfig
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-//     'nb_basetemplate',
-//     'Configuration/TsConfig/Page/ContentElement/Element/Accordion.tsconfig',
-//     'TYPO3 Base Template Content Element: Accordion'
-// );
-
 // Add content element to selector list
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',

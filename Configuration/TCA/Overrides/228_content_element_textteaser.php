@@ -14,13 +14,6 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['textteaser'] ?? false)) {
     $GLOBALS['TCA']['tt_content']['types']['textteaser'] = [];
 }
 
-// Add content element PageTSConfig
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'nb_basetemplate',
-    'Configuration/TsConfig/Page/ContentElement/Element/Textteaser.tsconfig',
-    'TYPO3 Base Template Content Element: Text with Teaser'
-);
-
 // Add content element to selector list
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
