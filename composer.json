@@ -12,22 +12,18 @@
             "homepage": "https://netbrothers.de/"
         }
     ],
-    "require": {
-        "php": ">=8.2",
-        "typo3/cms-backend": "^13",
-        "typo3/cms-core": "^13",
-        "typo3/cms-frontend": "^13",
-        "typo3/cms-install": "^13"
-    },
-    "extra": {
-        "typo3/cms": {
-            "extension-key": "nb_basetemplate"
-        }
-    },
     "autoload": {
         "psr-4": {
             "NetBrothers\\TYPO3BaseTemplate\\": "Classes"
         }
+    },
+    "require": {
+        "php": ">=8.2",
+        "b13/container": "^3",
+        "typo3/cms-backend": "^13",
+        "typo3/cms-core": "^13",
+        "typo3/cms-frontend": "^13",
+        "typo3/cms-install": "^13"
     },
     "require-dev": {
         "phpstan/phpstan": "^2"
@@ -36,6 +32,12 @@
         "allow-plugins": {
             "typo3/cms-composer-installers": true,
             "typo3/class-alias-loader": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "nb_basetemplate"
         }
     }
 }
