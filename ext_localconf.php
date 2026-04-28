@@ -9,15 +9,6 @@
 
 defined('TYPO3') or die('Access denied.');
 
-// Define TypoScript as content rendering template
-$GLOBALS['TYPO3_CONF_VARS']['FE']['contentRenderingTemplates'][] = 'nbbasetemplate/Configuration/TypoScript/';
-$GLOBALS['TYPO3_CONF_VARS']['FE']['contentRenderingTemplates'][] = 'nbbasetemplate/Configuration/TypoScript/ContentElement/';
-
-// Make the extension configuration accessible
-$extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-    \TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
-);
-
 /*
  * Register custom EXT:form configuration
  * See https://docs.typo3.org/c/typo3/cms-form/13.4/en-us/I/Concepts/Configuration/Index.html

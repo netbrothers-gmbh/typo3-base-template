@@ -1,9 +1,0 @@
-# EXTENSIONS
-# Manual inclusion to keep control over loading order
-[extension.isLoaded('form') == 1]
-    @import 'EXT:nb_basetemplate/Configuration/TypoScript/Extension/Form/constants.typoscript'
-[end]
-
-[extension.isLoaded('seo') == 1]
-    @import 'EXT:nb_basetemplate/Configuration/TypoScript/Extension/Seo/constants.typoscript'
-[end]
