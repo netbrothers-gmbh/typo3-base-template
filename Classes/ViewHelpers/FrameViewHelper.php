@@ -137,18 +137,18 @@ class FrameViewHelper extends AbstractViewHelper
             $backgroundImageClasses[] = 'frame-backgroundimage-' . $backgroundImageOptions['filter'];
         }
 
+        $additionalClasses = [];
+        if (
+            isset($configuration['frameAttributes']['class'])
+            && is_string($configuration['frameAttributes']['class'])
+            && trim($configuration['frameAttributes']['class']) !== ''
+        ) {
+            $additionalClasses = GeneralUtility::trimExplode(' ', $configuration['frameAttributes']['class']);
+        }
+
         // Frame Attributes
         $configuration['frameAttributes']['id'] = $identifier;
-        $configuration['frameAttributes']['class'] = implode(
-            ' ',
-            array_merge(
-                GeneralUtility::trimExplode(
-                    ' ',
-                    isset($configuration['frameAttributes']['class']) && is_string($configuration['frameAttributes']['class']) ? $configuration['frameAttributes']['class'] : ''
-                ),
-                $classes
-            )
-        );
+        $configuration['frameAttributes']['class'] = implode(' ', $classes + $additionalClasses);
 
         // Template
         $view = $this->getTemplateObject();
