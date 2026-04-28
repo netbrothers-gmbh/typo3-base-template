@@ -1,1 +1,6 @@
+# This file is loaded automagically with the site set.
+# See https://docs.typo3.org/m/typo3/reference-typoscript/13.4/en-us/UsingSettingTSconfig/PageTSconfig.html
+# and also specifically
+# https://docs.typo3.org/m/typo3/reference-typoscript/13.4/en-us/UsingSettingTSconfig/PageTSconfig.html#example-load-page-tsconfig-from-the-site-set-and-the-site
+
 @import './PageTsConfig/'
