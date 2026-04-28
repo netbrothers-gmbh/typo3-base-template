@@ -40,7 +40,7 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('form')) {
         plugin.tx_form {
             settings {
                 yamlConfigurations {
-                    110 = EXT:nb_basetemplate/Configuration/Form/Setup.yaml
+                    1777380058 = EXT:nb_basetemplate/Configuration/Form/Setup.yaml
                 }
             }
         }
