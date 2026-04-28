@@ -9,43 +9,6 @@
 
 defined('TYPO3') or die('Access denied.');
 
-// Register PageTS
-
-// BackendLayouts
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'nb_basetemplate',
-    'Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig',
-    'TYPO3 Base Template: Backend Layouts'
-);
-
-// RTE
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'nb_basetemplate',
-    'Configuration/TsConfig/Page/RTE.tsconfig',
-    'TYPO3 Base Template: RTE'
-);
-
-// TCEMAIN
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'nb_basetemplate',
-    'Configuration/TsConfig/Page/TCEMAIN.tsconfig',
-    'TYPO3 Base Template: TCEMAIN'
-);
-
-// TCEFORM
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'nb_basetemplate',
-    'Configuration/TsConfig/Page/TCEFORM.tsconfig',
-    'TYPO3 Base Template: TCEFORM'
-);
-
-// Content Elements DONE
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'nb_basetemplate',
-    'Configuration/TsConfig/Page/ContentElement/All.tsconfig',
-    'TYPO3 Base Template: All Content Elements'
-);
-
 // Register fields
 $GLOBALS['TCA']['pages']['columns'] = array_replace_recursive(
     $GLOBALS['TCA']['pages']['columns'],
@@ -125,7 +88,27 @@ $GLOBALS['TCA']['pages']['columns'] = array_replace_recursive(
 );
 
 // Assign position to fields
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'nav_icon_set', '1,3,4', 'after:nav_title');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'nav_icon_identifier', '1,3,4', 'after:nav_icon_set');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'nav_icon', '1,3,4', 'after:nav_icon_set');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'thumbnail', '1,3,4', 'after:backend_layout_next_level');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    'nav_icon_set',
+    '1,3,4',
+    'after:nav_title'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    'nav_icon_identifier',
+    '1,3,4',
+    'after:nav_icon_set'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    'nav_icon',
+    '1,3,4',
+    'after:nav_icon_set'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    'thumbnail',
+    '1,3,4',
+    'after:backend_layout_next_level'
+);

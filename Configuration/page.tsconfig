@@ -1,9 +1,0 @@
-# See https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/FileStructure/Configuration/PageTsconfig.html
-# "In this file global page TSconfig can be stored. It will be automatically included in all pages."
-
-@import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/ContentElement/All.tsconfig'
-@import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig'
-@import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/RTE.tsconfig'
-@import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/TCADefaults.tsconfig'
-@import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/TCEMAIN.tsconfig'
-@import 'EXT:nb_basetemplate/Configuration/TsConfig/Page/TCEFORM.tsconfig'
