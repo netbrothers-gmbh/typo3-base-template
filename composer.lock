@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8f9f39ed7660b1e47d7e9244c99f2e7",
+    "content-hash": "f9aa361cf661dab541adf21d7f7a10dd",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5109,23 +5109,23 @@
         },
         {
             "name": "typo3/cms-backend",
-            "version": "13.4.x-dev",
+            "version": "v13.4.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/backend.git",
-                "reference": "156d89b60cae8e046022453b76757a3b9987da8f"
+                "reference": "7b588ab6ee665bb96efe9eae18022ac9adeae86d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/156d89b60cae8e046022453b76757a3b9987da8f",
-                "reference": "156d89b60cae8e046022453b76757a3b9987da8f",
+                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/7b588ab6ee665bb96efe9eae18022ac9adeae86d",
+                "reference": "7b588ab6ee665bb96efe9eae18022ac9adeae86d",
                 "shasum": ""
             },
             "require": {
                 "ext-intl": "*",
                 "ext-libxml": "*",
                 "psr/event-dispatcher": "^1.0",
-                "typo3/cms-core": "13.4.*@dev"
+                "typo3/cms-core": "13.4.28"
             },
             "conflict": {
                 "typo3/cms": "*"
@@ -5187,7 +5187,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2026-04-23T14:07:46+00:00"
+            "time": "2026-04-14T10:53:41+00:00"
         },
         {
             "name": "typo3/cms-cli",
@@ -5575,21 +5575,21 @@
         },
         {
             "name": "typo3/cms-frontend",
-            "version": "13.4.x-dev",
+            "version": "v13.4.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/frontend.git",
-                "reference": "47a2f8dc4bcbe3908d9fbe48e14a0490aefade69"
+                "reference": "32c07f2f21c36662d3bc4e436f5e3616af2730f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/47a2f8dc4bcbe3908d9fbe48e14a0490aefade69",
-                "reference": "47a2f8dc4bcbe3908d9fbe48e14a0490aefade69",
+                "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/32c07f2f21c36662d3bc4e436f5e3616af2730f4",
+                "reference": "32c07f2f21c36662d3bc4e436f5e3616af2730f4",
                 "shasum": ""
             },
             "require": {
                 "ext-libxml": "*",
-                "typo3/cms-core": "13.4.*@dev"
+                "typo3/cms-core": "13.4.28"
             },
             "conflict": {
                 "typo3/cms": "*"
@@ -5641,20 +5641,20 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2026-04-22T06:54:50+00:00"
+            "time": "2026-04-14T10:53:41+00:00"
         },
         {
             "name": "typo3/cms-install",
-            "version": "13.4.x-dev",
+            "version": "v13.4.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/install.git",
-                "reference": "5622fc7a8a4bbc4cfb225eb556531b169b024bac"
+                "reference": "ae99f438c5814e51fad12fbced823b8a8f02f846"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/install/zipball/5622fc7a8a4bbc4cfb225eb556531b169b024bac",
-                "reference": "5622fc7a8a4bbc4cfb225eb556531b169b024bac",
+                "url": "https://api.github.com/repos/TYPO3-CMS/install/zipball/ae99f438c5814e51fad12fbced823b8a8f02f846",
+                "reference": "ae99f438c5814e51fad12fbced823b8a8f02f846",
                 "shasum": ""
             },
             "require": {
@@ -5663,9 +5663,9 @@
                 "nikic/php-parser": "^5.4.0",
                 "symfony/finder": "^7.2",
                 "symfony/http-foundation": "^7.2",
-                "typo3/cms-core": "13.4.*@dev",
-                "typo3/cms-extbase": "13.4.*@dev",
-                "typo3/cms-fluid": "13.4.*@dev"
+                "typo3/cms-core": "13.4.28",
+                "typo3/cms-extbase": "13.4.28",
+                "typo3/cms-fluid": "13.4.28"
             },
             "conflict": {
                 "typo3/cms": "*"
@@ -5709,7 +5709,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2026-04-14T11:14:08+00:00"
+            "time": "2026-04-14T10:53:41+00:00"
         },
         {
             "name": "typo3/html-sanitizer",
@@ -5941,12 +5941,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "typo3/cms-backend": 20,
-        "typo3/cms-core": 20,
-        "typo3/cms-frontend": 20,
-        "typo3/cms-install": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
