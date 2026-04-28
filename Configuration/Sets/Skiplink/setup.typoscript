@@ -1,1 +1,24 @@
-@import 'EXT:nb_basetemplate/Configuration/TypoScript/Skiplink/setup.typoscript'
+page {
+    10 {
+        dataProcessing {
+            1692697283 = NetBrothers\TYPO3BaseTemplate\DataProcessing\SkiplinkProcessor
+            1692697283 {
+                entries {
+                    mainnavigation {
+                        label = LLL:EXT:nb_basetemplate/Resources/Private/Language/locallang.xlf:skiptomainnavigation
+                        section = mainnavigation
+                    }
+                    content {
+                        label = LLL:EXT:nb_basetemplate/Resources/Private/Language/locallang.xlf:skiptomaincontent
+                        section = page-content
+                    }
+                    footer {
+                        label = LLL:EXT:nb_basetemplate/Resources/Private/Language/locallang.xlf:skiptopagefooter
+                        section = page-footer
+                    }
+                }
+                as = skiplinks
+            }
+        }
+    }
+}

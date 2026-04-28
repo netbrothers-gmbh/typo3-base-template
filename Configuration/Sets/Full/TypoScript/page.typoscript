@@ -1,4 +1,4 @@
-page = PAGE
+
 page {
     typeNum = 0
     shortcutIcon = {$page.favicon.file}

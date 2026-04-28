@@ -1,11 +1,24 @@
+# Define the page object, before using it in other places.
+page = PAGE
+
 # DEPENDENCIES
-@import 'EXT:nb_basetemplate/Configuration/TypoScript/Extension/setup.typoscript'
+@import './TypoScript/Extension/setup.typoscript'
 
 # HELPER
-@import 'EXT:nb_basetemplate/Configuration/TypoScript/Helper/Block.typoscript'
-@import 'EXT:nb_basetemplate/Configuration/TypoScript/Helper/PageClass.typoscript'
+@import './TypoScript/Block.typoscript'
+@import './TypoScript/PageClass.typoscript'
 
 # GENERAL
-@import 'EXT:nb_basetemplate/Configuration/TypoScript/General/page.typoscript'
-@import 'EXT:nb_basetemplate/Configuration/TypoScript/General/plugin.typoscript'
-@import 'EXT:nb_basetemplate/Configuration/TypoScript/General/config.typoscript'
+@import './TypoScript/page.typoscript'
+@import './TypoScript/plugin.typoscript'
+config {
+    absRefPrefix = auto
+    pageTitleFirst = 1
+    pageTitleSeparator = -
+    pageTitleSeparator.noTrimWrap = | | |
+    debug = 0
+    index_enable = 1
+    index_externals = 1
+    index_metatags = 1
+    headerComment = {$config.headerComment}
+}
