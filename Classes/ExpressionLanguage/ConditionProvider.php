@@ -22,7 +22,6 @@ class ConditionProvider extends AbstractProvider
     {
         $this->expressionLanguageVariables = [
             'extension' => GeneralUtility::makeInstance(ExtensionWrapper::class),
-            'extensionConfiguration' => GeneralUtility::makeInstance(ExtensionConfigurationWrapper::class),
         ];
     }
 }
