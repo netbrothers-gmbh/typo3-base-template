@@ -1,10 +1,10 @@
 
+# See https://docs.typo3.org/m/typo3/reference-typoscript/13.4/en-us/Conditions/Index.html#condition-functions-in-frontend-context-function-site
+# See https://docs.typo3.org/m/typo3/reference-coreapi/13.4/en-us/ApiOverview/SiteHandling/UseSiteInConditions.html
+
 page = PAGE
 
-# See https://docs.typo3.org/m/typo3/reference-typoscript/13.4/en-us/Conditions/Index.html#condition-functions-in-frontend-context-function-site
-
-# [{$plugin.tx_nb_basetemplate.disableBootstrapCss} != 1]
-[traverse(site('configuration'), 'settings/plugin.tx_nb_basetemplate.disableBootstrapCss') != 1]
+[site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableBootstrapCss"] != 1]
 page {
     includeCSSLibs {
         bootstrap_css = EXT:nb_basetemplate/Resources/Public/Css/theme.css
@@ -12,8 +12,7 @@ page {
 }
 [END]
 
-# [{$plugin.tx_nb_basetemplate.disableBootstrapBundleJs} != 1]
-[traverse(site('configuration'), 'settings/plugin.tx_nb_basetemplate.disableBootstrapBundleJs') != 1]
+[site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableBootstrapBundleJs"] != 1]
 page {
     includeJSFooterlibs {
         bootstrap_bundle_js = EXT:nb_basetemplate/Resources/Public/JavaScript/bootstrap.bundle.min.js
