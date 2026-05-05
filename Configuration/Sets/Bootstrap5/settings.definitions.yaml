@@ -9,6 +9,12 @@ settings:
     category: TYPO3BaseTemplate
     type: bool
     default: false
+  plugin.tx_nb_basetemplate.disableThemeCss:
+    label: 'Disable loading of the Themes additional CSS'
+    description: 'If you activate this, the customisations of this theme will not be loaded. Useful if you want to take full control over styling.'
+    category: TYPO3BaseTemplate
+    type: bool
+    default: false
   plugin.tx_nb_basetemplate.disableBootstrapBundleJs:
     label: 'Disable loading of Bootstrap Bundle JS'
     description: 'If you activate this, the Bootstrap Bundle JS will not be loaded. Useful if you provide your own custom built version of Bootstrap.'

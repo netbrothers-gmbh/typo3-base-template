@@ -7,7 +7,15 @@ page = PAGE
 [site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableBootstrapCss"] != 1]
 page {
     includeCSSLibs {
-        bootstrap_css = EXT:nb_basetemplate/Resources/Public/Css/theme.css
+        tx_nb_basetemplate_bootstrap_css = EXT:nb_basetemplate/Resources/Public/Css/theme-bootstrap.css
+    }
+}
+[END]
+
+[site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableThemeCss"] != 1]
+page {
+    includeCSSLibs {
+        tx_nb_basetemplate_custom_css = EXT:nb_basetemplate/Resources/Public/Css/theme-custom.css
     }
 }
 [END]
@@ -15,7 +23,7 @@ page {
 [site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableBootstrapBundleJs"] != 1]
 page {
     includeJSFooterlibs {
-        bootstrap_bundle_js = EXT:nb_basetemplate/Resources/Public/JavaScript/bootstrap.bundle.min.js
+        tx_nb_basetemplate_bootstrap_bundle_js = EXT:nb_basetemplate/Resources/Public/JavaScript/bootstrap.bundle.min.js
     }
 }
 [END]
