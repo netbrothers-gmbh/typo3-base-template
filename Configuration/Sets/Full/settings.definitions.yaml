@@ -76,7 +76,7 @@ settings:
     description: 'Leave blank to use website title from template instead'
     category: TYPO3BaseTemplate.logo
     type: string
-    default: 'EXT:nb_basetemplate/Resources/Public/Images/TYPO3BaseTemplate.svg'
+    default: 'EXT:nb_basetemplate/Resources/Public/Images/BootstrapPackage.svg'
 
   page.logo.height:
     label: 'Height'
