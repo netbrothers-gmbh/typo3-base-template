@@ -1,0 +1,52 @@
+
+.scroll-top {
+  --scrolltop-zindex: 1020;
+  --scrolltop-space: 20px;
+  --scrolltop-bg: #494949;
+  --scrolltop-color: #ffffff;
+  --scrolltop-hover-bg: #{$bp-color-1};
+  --scrolltop-hover-color: #ffffff;
+  overflow: hidden;
+  z-index: var(--scrolltop-zindex);
+  background-color: var(--scrolltop-bg);
+  color: var(--scrolltop-color);
+  bottom: var(--scrolltop-space);
+  right: var(--scrolltop-space);
+  position: fixed;
+  opacity: 0;
+  width: 3em;
+  height: 3em;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-top {
+    transition: none;
+  }
+}
+.scroll-top:active, .scroll-top:focus, .scroll-top:hover {
+  color: var(--scrolltop-hover-color);
+  background-color: var(--scrolltop-hover-bg);
+}
+.scroll-top .scroll-top-icon {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.scroll-top .scroll-top-icon:before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.scroll-top.scroll-top-visible {
+  opacity: 1;
+}

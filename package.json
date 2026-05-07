@@ -1,0 +1,25 @@
+{
+  "name": "typo3-base-template",
+  "version": "0.1.24",
+  "description": "TYPO3 Base Template based on Bootstrap Package by legendary Benjamin Kott",
+  "keywords": [
+    "TYPO3 CMS"
+  ],
+  "homepage": "https://github.com/netbrothers-gmbh/typo3-base-template#readme",
+  "bugs": {
+    "url": "https://github.com/netbrothers-gmbh/typo3-base-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netbrothers-gmbh/typo3-base-template.git"
+  },
+  "license": "MIT",
+  "author": "Thilo Ratnaweera <thilo.ratnaweera@netbrothers.de>",
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "sass": "^1.99.0",
+    "vite": "^8.0.11"
+  }
+}

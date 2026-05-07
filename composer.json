@@ -4,7 +4,7 @@
     "description": "TYPO3 Base Template based on Bootstrap Package by legendary Benjamin Kott",
     "keywords": ["TYPO3 CMS"],
     "homepage": "https://netbrothers.de/",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "authors": [
         {
             "name": "Thilo Ratnaweera",

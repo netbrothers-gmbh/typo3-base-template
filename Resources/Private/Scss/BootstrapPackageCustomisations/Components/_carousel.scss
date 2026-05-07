@@ -1,0 +1,420 @@
+
+.carousel .item {
+  height: 400px;
+}
+@media (min-width: 768px) {
+  .carousel .item {
+    height: 600px;
+  }
+}
+
+.carousel-small .item {
+  height: 300px;
+}
+@media (min-width: 768px) {
+  .carousel-small .item {
+    height: 400px;
+  }
+}
+
+.carousel-fullscreen .item {
+  height: 100vh;
+}
+
+.carousel .carousel-item {
+  padding-left: calc(40px / 2);
+  padding-right: calc(40px / 2);
+}
+@media (min-width: 576px) {
+  .carousel .carousel-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.carousel .carousel-item h1, .carousel .carousel-item .h1,
+.carousel .carousel-item h2,
+.carousel .carousel-item .h2,
+.carousel .carousel-item h3,
+.carousel .carousel-item .h3,
+.carousel .carousel-item h4,
+.carousel .carousel-item .h4,
+.carousel .carousel-item h5,
+.carousel .carousel-item .h5,
+.carousel .carousel-item h6,
+.carousel .carousel-item .h6 {
+  color: inherit;
+  margin-top: 0;
+}
+.carousel .carousel-item a {
+  text-decoration: none;
+}
+
+.carousel-fade .carousel-item {
+  perspective: initial !important;
+  transform: initial !important;
+}
+
+:root {
+  --carousel-item-color: inherit;
+  --carousel-item-background: inherit;
+  --carousel-item-link-color: inherit;
+  --carousel-item-link-hover-color: inherit;
+}
+
+.carousel-item {
+  background-color: var(--carousel-item-background);
+  color: var(--carousel-item-color);
+}
+.carousel-item a[class=""],
+.carousel-item a:not([class]) {
+  color: var(--carousel-item-link-color);
+}
+.carousel-item a[class=""]:hover,
+.carousel-item a:not([class]):hover {
+  color: var(--carousel-item-link-hover-color);
+}
+
+.carousel-item-layout-primary {
+  --carousel-item-color: #ffffff;
+  --carousel-item-background: #{$bp-color-1};
+  --carousel-item-link-color: #ffffff;
+  --carousel-item-link-hover-color: #ffffff;
+}
+
+.carousel-item-layout-secondary {
+  --carousel-item-color: #ffffff;
+  --carousel-item-background: #514553;
+  --carousel-item-link-color: #ffffff;
+  --carousel-item-link-hover-color: #ffffff;
+}
+
+.carousel-item-layout-tertiary {
+  --carousel-item-color: #000000;
+  --carousel-item-background: #758c7f;
+  --carousel-item-link-color: #000000;
+  --carousel-item-link-hover-color: #000000;
+}
+
+.carousel-item-layout-quaternary {
+  --carousel-item-color: #ffffff;
+  --carousel-item-background: #2d1e2f;
+  --carousel-item-link-color: #ffffff;
+  --carousel-item-link-hover-color: #ffffff;
+}
+
+.carousel-item-layout-light {
+  --carousel-item-color: #212121;
+  --carousel-item-background: #e9e9e9;
+  --carousel-item-link-color: #{$bp-color-1};
+  --carousel-item-link-hover-color: rgb(69.6, 95.2, 76.8);
+}
+
+.carousel-item-layout-dark {
+  --carousel-item-color: #ffffff;
+  --carousel-item-background: #313131;
+  --carousel-item-link-color: #{$bp-color-1};
+  --carousel-item-link-hover-color: rgb(69.6, 95.2, 76.8);
+}
+
+.carousel .carousel-backgroundimage-container {
+  overflow: hidden;
+}
+.carousel .carousel-backgroundimage-container,
+.carousel .carousel-backgroundimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.carousel .carousel-backgroundimage-fade {
+  opacity: 0.125;
+}
+.carousel .carousel-backgroundimage-parallax {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@media (hover: none) {
+  .carousel .carousel-backgroundimage-parallax {
+    background-attachment: initial;
+  }
+}
+.carousel .carousel-backgroundimage-blur {
+  filter: blur(10px);
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  top: -20px;
+  left: -20px;
+}
+.carousel .carousel-backgroundimage-grayscale {
+  filter: grayscale(1);
+}
+.carousel .carousel-backgroundimage-sepia {
+  filter: sepia(1);
+}
+
+.carousel .carousel-content {
+  position: relative;
+  height: 100%;
+}
+.carousel .carousel-content-inner {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .carousel .carousel-content-inner {
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .carousel .carousel-content-inner {
+    max-width: 680px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel .carousel-content-inner {
+    max-width: 920px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel .carousel-content-inner {
+    max-width: 1100px;
+  }
+}
+@media (min-width: 1400px) {
+  .carousel .carousel-content-inner {
+    max-width: 1280px;
+  }
+}
+
+.carousel-item-bodytext > *:last-child {
+  margin-bottom: 0;
+}
+
+:root {
+  --carousel-control-width: 40px;
+}
+
+.carousel {
+  container-type: inline-size;
+  overflow: hidden;
+}
+@container (min-width: 681px) {
+  .carousel {
+    --carousel-control-width: 50px;
+  }
+}
+@container (min-width: 1361px) {
+  .carousel {
+    --carousel-control-width: 90px;
+  }
+}
+.carousel .carousel-control-icon {
+  max-width: calc(100% - 20px);
+}
+.carousel .carousel-control {
+  width: var(--carousel-control-width);
+}
+.carousel .carousel-control:focus-visible .carousel-control-icon {
+  outline: 2px solid;
+}
+.carousel .carousel-control-icon {
+  border-radius: 2px;
+  background-size: calc(100% - 4px);
+}
+@container (max-width: 680px) {
+  .carousel .carousel-control-prev {
+    justify-content: start;
+  }
+  .carousel .carousel-control-next {
+    justify-content: end;
+  }
+}
+.carousel .carousel-indicators {
+  align-items: center;
+  color: #ffffff;
+}
+.carousel .carousel-indicators button {
+  border-radius: 2px;
+  overflow: hidden;
+  color: inherit;
+  height: 4px;
+}
+.carousel .carousel-indicators button:focus-visible {
+  outline-offset: 1px;
+  outline: 2px solid currentColor;
+}
+.carousel .carousel-indicators button.active {
+  height: 8px;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+}
+.carousel .carousel-indicators-navigation {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem calc(40px / 2);
+  margin: 0;
+  width: 100%;
+  z-index: 15;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+.carousel .carousel-indicators-navigation > button {
+  position: relative;
+  overflow: visible;
+  padding: 0.5rem !important;
+  border: 0 !important;
+  margin: 0;
+  text-indent: 0;
+  width: auto;
+  height: auto !important;
+  background-color: transparent;
+  cursor: pointer;
+}
+.carousel .carousel-indicators-navigation > button.active:before {
+  content: "";
+  position: absolute;
+  inset: auto 0.5rem calc(0.25rem - 1px);
+  width: auto;
+  border-top: 2px solid #{$bp-color-1};
+}
+.carousel .carousel-indicators-navigation > button:first-child {
+  padding-left: 0;
+}
+.carousel .carousel-indicators-navigation > button:first-child:before {
+  left: 0;
+}
+.carousel .carousel-indicators-navigation > button:last-child {
+  padding-right: 0;
+}
+.carousel .carousel-indicators-navigation > button:last-child:before {
+  right: 0;
+}
+.carousel .carousel-content-link:focus-visible {
+  outline: none;
+}
+.carousel .carousel-content-link:focus-visible:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0 0 0 1px #000000, inset 0 0 0 2px #ffffff;
+}
+
+.carousel-item-type-header a[class=""], .carousel-item-type-header a[class=""]:hover,
+.carousel-item-type-header a:not([class]),
+.carousel-item-type-header a:not([class]):hover,
+.carousel-item-type-header a.carousel-content-link,
+.carousel-item-type-header a.carousel-content-link:hover {
+  color: var(--carousel-item-color);
+}
+.carousel-item-type-header .carousel-text-inner {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .carousel-item-type-header .carousel-text-inner {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item-type-header .carousel-text-inner {
+    width: 65%;
+  }
+}
+
+.carousel-item-type-text a[class=""], .carousel-item-type-text a[class=""]:hover,
+.carousel-item-type-text a:not([class]),
+.carousel-item-type-text a:not([class]):hover,
+.carousel-item-type-text a.carousel-content-link,
+.carousel-item-type-text a.carousel-content-link:hover {
+  color: var(--carousel-item-color);
+}
+.carousel-item-type-text .carousel-text-inner {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .carousel-item-type-text .carousel-text-inner {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item-type-text .carousel-text-inner {
+    width: 65%;
+  }
+}
+
+.carousel-item-type-text_and_image a[class=""], .carousel-item-type-text_and_image a[class=""]:hover,
+.carousel-item-type-text_and_image a:not([class]),
+.carousel-item-type-text_and_image a:not([class]):hover,
+.carousel-item-type-text_and_image a.carousel-content-link,
+.carousel-item-type-text_and_image a.carousel-content-link:hover {
+  color: var(--carousel-item-color);
+}
+.carousel-item-type-text_and_image .carousel-image {
+  display: none;
+}
+.carousel-item-type-text_and_image .carousel-image img {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+@media (min-width: 576px) {
+  .carousel-item-type-text_and_image .carousel-image {
+    display: block;
+  }
+}
+
+.frame .carousel-item-type-text_and_image {
+  padding-left: calc(var(--carousel-control-width) + 0.25rem);
+  padding-right: calc(var(--carousel-control-width) + 0.25rem);
+}
+
+.carousel-item-type-background_image a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item-type-call_to_action .carousel-box {
+  color: #212121;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+@media (min-width: 576px) {
+  .carousel-item-type-call_to_action .carousel-box {
+    max-width: 50%;
+  }
+}
+.carousel-item-type-call_to_action .carousel-box .carousel-item-bodytext {
+  margin-bottom: 1rem;
+}
+.carousel-item-type-call_to_action .carousel-box > *:last-child {
+  margin-bottom: 0;
+}
+
+.frame .carousel-item-type-call_to_action {
+  padding-left: calc(var(--carousel-control-width) + 0.25rem);
+  padding-right: calc(var(--carousel-control-width) + 0.25rem);
+}
+
+.carousel-item-type-image .carousel-image {
+  width: 100%;
+}
+.carousel-item-type-image .carousel-image img {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

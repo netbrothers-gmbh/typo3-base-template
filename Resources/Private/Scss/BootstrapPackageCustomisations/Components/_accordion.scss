@@ -1,0 +1,51 @@
+
+.accordion-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.accordion-content-item {
+  order: 1;
+  width: 100%;
+}
+.accordion-content-item > *:first-child {
+  margin-top: 0;
+}
+.accordion-content-item > *:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-content-text {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.accordion-content-bottom .accordion-content-text {
+  order: 0;
+}
+
+.accordion-content-right .accordion-content-text {
+  order: 0;
+}
+
+@media (min-width: 768px) {
+  .accordion-content-right .accordion-content-item,
+  .accordion-content-left .accordion-content-item {
+    width: calc(50% - 1rem / 2);
+  }
+}
+.accordion-button {
+  --bs-accordion-btn-focus-ring-contrast-color: #ffffff;
+  --bs-accordion-btn-focus-ring-color: #000000;
+}
+
+.accordion-button:focus-visible {
+  z-index: 3;
+  border-color: var(--bs-accordion-btn-focus-border-color);
+  outline: 0;
+  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+  --bs-accordion-btn-focus-box-shadow:
+      0 0 0 2px var(--bs-accordion-btn-focus-ring-contrast-color),
+      0 0 0 4px var(--bs-accordion-btn-focus-ring-color);
+}

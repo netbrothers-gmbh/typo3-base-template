@@ -1,0 +1,21 @@
+
+
+.text-indent {
+  margin-bottom: 1rem;
+}
+.text-indent > *:first-child {
+  margin-top: 0;
+}
+.text-indent > *:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 576px) {
+  .text-indent {
+    margin-left: 10%;
+  }
+}
+@media (min-width: 768px) {
+  .text-indent {
+    margin-left: 20%;
+  }
+}

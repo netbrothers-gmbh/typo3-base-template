@@ -1,0 +1,195 @@
+.footer-section-content-column-left,
+.footer-section-content-column-middle,
+.footer-section-content-column-right {
+  --section-colspan: 12;
+}
+@media (min-width: 768px) {
+  .footer-section-content-column-left,
+  .footer-section-content-column-middle,
+  .footer-section-content-column-right {
+    --section-gaps: 2;
+    --section-colspan: 4;
+  }
+}
+
+.footer-section-content {
+  background: #313131;
+  --frame-color: #ffffff;
+  --frame-background: #313131;
+  --frame-link-color: rgb(135.8339432817, 158.5322397994, 142.2178391773);
+  --frame-link-hover-color: rgb(135.8339432817, 158.5322397994, 142.2178391773);
+}
+
+.footer-section-meta {
+  background: #212121;
+  --frame-color: #ffffff;
+  --frame-background: #212121;
+  --frame-link-color: #{$bp-color-2};
+  --frame-link-hover-color: #{$bp-color-2};
+}
+
+@media (min-width: 576px) {
+  .footer-info-section {
+    text-align: center;
+  }
+}
+.footer-info-section > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.footer-menu-section {
+  text-align: start;
+}
+.footer-menu-section + .footer-info-section {
+  margin-top: 40px;
+}
+
+.footer-menu-section-has-navigation.footer-menu-section-has-contact {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .footer-menu-section-has-navigation.footer-menu-section-has-contact {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .footer-menu-section-has-navigation.footer-menu-section-has-contact {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.footer-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-navigation-link {
+  color: inherit !important;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.footer-navigation-link-icon {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.footer-navigation-link-icon svg,
+.footer-navigation-link-icon img {
+  display: block;
+  margin: 0;
+}
+
+.footer-navigation-list-level-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-navigation-link-level-1 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact > *:first-child {
+  margin-top: 0;
+}
+.footer-contact > *:last-child {
+  margin-bottom: 0;
+}
+.footer-contact .footer-contact-headline {
+  font-size: inherit;
+  font-weight: bold;
+  line-height: inherit;
+  margin-bottom: 0.5rem;
+}
+
+.footer-meta .meta-menu {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+@media (min-width: 576px) {
+  .footer-meta .meta-menu {
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+  }
+  .footer-meta .meta-menu > li {
+    display: inline-block;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+.footer-meta .meta-menu .active a {
+  font-weight: bold;
+}
+
+.footer-language .language-menu {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+@media (min-width: 576px) {
+  .footer-language .language-menu {
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+  }
+  .footer-language .language-menu > li {
+    display: inline-block;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+.footer-language .language-menu .active a {
+  font-weight: bold;
+}
+.footer-language .language-menu .inactive {
+  opacity: 0.5;
+}
+
+@media (min-width: 576px) {
+  .footer-sociallinks .sociallinks-list {
+    justify-content: center;
+  }
+}
+.footer-sociallinks .sociallinks-item {
+  width: auto;
+}
+.footer-sociallinks .sociallinks-link {
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: inherit;
+  opacity: 0.75;
+  transition: all ease-in-out 0.3s;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.footer-sociallinks .sociallinks-link:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.footer-sociallinks .sociallinks-link-label {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.footer-sociallinks .sociallinks-link-label:not(caption) {
+  position: absolute !important;
+}
+.footer-sociallinks .sociallinks-link-label * {
+  overflow: hidden !important;
+}
+
+.footer-copyright p {
+  margin-bottom: 0;
+}

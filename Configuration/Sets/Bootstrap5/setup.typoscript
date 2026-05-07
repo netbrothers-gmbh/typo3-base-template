@@ -4,6 +4,12 @@
 
 page = PAGE
 
+page {
+    includeJSFooterlibs {
+        tx_nb_basetemplate_custom_js = EXT:nb_basetemplate/Resources/Public/Dist/JavaScript/index.js
+    }
+}
+
 [site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableBootstrapCss"] != 1]
 page {
     includeCSSLibs {
@@ -15,7 +21,7 @@ page {
 [site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableThemeCss"] != 1]
 page {
     includeCSSLibs {
-        tx_nb_basetemplate_custom_css = EXT:nb_basetemplate/Resources/Public/Css/theme-custom.css
+        tx_nb_basetemplate_custom_css = EXT:nb_basetemplate/Resources/Public/Dist/Css/index.css
     }
 }
 [END]

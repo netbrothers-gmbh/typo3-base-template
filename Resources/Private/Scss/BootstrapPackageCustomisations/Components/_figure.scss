@@ -1,0 +1,18 @@
+
+figure {
+  display: block;
+  margin-bottom: 1rem;
+}
+figure img,
+figure picture {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+figure .caption {
+  padding-top: 0.25rem;
+  font-size: 0.85rem;
+  word-wrap: break-word;
+  opacity: 0.8;
+}
