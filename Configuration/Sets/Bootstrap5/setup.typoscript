@@ -10,7 +10,7 @@ page {
     }
 }
 
-[site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableBootstrapCss"] != 1]
+[traverse(site('configuration'), 'settings/plugin/tx_nb_basetemplate/disableBootstrapCss') != 1]
 page {
     includeCSSLibs {
         tx_nb_basetemplate_bootstrap_css = EXT:nb_basetemplate/Resources/Public/Css/theme-bootstrap.css
@@ -18,7 +18,7 @@ page {
 }
 [END]
 
-[site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableThemeCss"] != 1]
+[traverse(site('configuration'), 'settings/plugin/tx_nb_basetemplate/disableThemeCss') != 1]
 page {
     includeCSSLibs {
         tx_nb_basetemplate_custom_css = EXT:nb_basetemplate/Resources/Public/Dist/Css/index.css
@@ -26,7 +26,7 @@ page {
 }
 [END]
 
-[site("configuration")["settings"]["plugin"]["tx_nb_basetemplate"]["disableBootstrapBundleJs"] != 1]
+[traverse(site('configuration'), 'settings/plugin/tx_nb_basetemplate/disableBootstrapBundleJs') != 1]
 page {
     includeJSFooterlibs {
         tx_nb_basetemplate_bootstrap_bundle_js = EXT:nb_basetemplate/Resources/Public/JavaScript/bootstrap.bundle.min.js
