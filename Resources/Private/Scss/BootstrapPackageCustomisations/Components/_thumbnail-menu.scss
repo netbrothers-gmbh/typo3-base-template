@@ -3,7 +3,7 @@
   --thumbnailmenu-gap: 0.5rem;
   --thumbnailmenu-columns: 1;
   --thumbnailmenu-color: #ffffff;
-  --thumbnailmenu-bg: #{$bp-color-3};
+  --thumbnailmenu-bg: #{$bp-thumbnailmenu-bg-color};
 }
 
 .thumbnail-menu {

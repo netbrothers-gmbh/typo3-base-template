@@ -1,7 +1,10 @@
 
-$bp-color-1: #577760;
-$bp-color-2: #738e7a;
-$bp-color-3: #577760bf;
+$bp-primary-color: #577760;
+$bp-secondary-color: #514553;
+$bp-tertiary-color: #758c7f;
+$bp-quaternary-color: #2d1e2f;
+$bp-footer-link-color: #738e7a;
+$bp-thumbnailmenu-bg-color: #577760bf;
 
 @import './Components/form';
 @import './Components/embed-responsive';
@@ -60,7 +63,7 @@ nav > .pagination {
   left: 1rem;
   top: 1rem;
   right: 1rem;
-  background: #{$bp-color-1};
+  background: #{$bp-primary-color};
   color: #ffffff;
   padding: 1rem;
   border-radius: 0.375rem;

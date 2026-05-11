@@ -24,8 +24,8 @@
   background: #212121;
   --frame-color: #ffffff;
   --frame-background: #212121;
-  --frame-link-color: #{$bp-color-2};
-  --frame-link-hover-color: #{$bp-color-2};
+  --frame-link-color: #{$bp-footer-link-color};
+  --frame-link-hover-color: #{$bp-footer-link-color};
 }
 
 @media (min-width: 576px) {

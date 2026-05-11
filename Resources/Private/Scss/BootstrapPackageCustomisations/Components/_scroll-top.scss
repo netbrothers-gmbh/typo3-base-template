@@ -4,7 +4,7 @@
   --scrolltop-space: 20px;
   --scrolltop-bg: #494949;
   --scrolltop-color: #ffffff;
-  --scrolltop-hover-bg: #{$bp-color-1};
+  --scrolltop-hover-bg: #{$bp-primary-color};
   --scrolltop-hover-color: #ffffff;
   overflow: hidden;
   z-index: var(--scrolltop-zindex);
