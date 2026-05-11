@@ -350,21 +350,21 @@
 
 .frame-background-secondary {
   --frame-color: #ffffff;
-  --frame-background: #{$bp-secondary-color};
+  --frame-background: #{$bp-secondary-bg-color};
   --frame-link-color: #ffffff;
   --frame-link-hover-color: #ffffff;
 }
 
 .frame-background-tertiary {
   --frame-color: #000000;
-  --frame-background: #{$bp-tertiary-color};
+  --frame-background: #{$bp-tertiary-bg-color};
   --frame-link-color: #000000;
   --frame-link-hover-color: #000000;
 }
 
 .frame-background-quaternary {
   --frame-color: #ffffff;
-  --frame-background: #{$bp-quaternary-color};
+  --frame-background: #{$bp-quaternary-bg-color};
   --frame-link-color: #ffffff;
   --frame-link-hover-color: #ffffff;
 }

@@ -83,21 +83,21 @@
 
 .carousel-item-layout-secondary {
   --carousel-item-color: #ffffff;
-  --carousel-item-background: #{$bp-secondary-color};
+  --carousel-item-background: #{$bp-secondary-bg-color};
   --carousel-item-link-color: #ffffff;
   --carousel-item-link-hover-color: #ffffff;
 }
 
 .carousel-item-layout-tertiary {
   --carousel-item-color: #000000;
-  --carousel-item-background: #{$bp-tertiary-color};
+  --carousel-item-background: #{$bp-tertiary-bg-color};
   --carousel-item-link-color: #000000;
   --carousel-item-link-hover-color: #000000;
 }
 
 .carousel-item-layout-quaternary {
   --carousel-item-color: #ffffff;
-  --carousel-item-background: #{$bp-quaternary-color};
+  --carousel-item-background: #{$bp-quaternary-bg-color};
   --carousel-item-link-color: #ffffff;
   --carousel-item-link-hover-color: #ffffff;
 }

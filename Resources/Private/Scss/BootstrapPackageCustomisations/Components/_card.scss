@@ -187,19 +187,19 @@
 }
 
 .card-panel-secondary {
-  --cardpanel-header-background: #{$bp-secondary-color};
+  --cardpanel-header-background: #{$bp-secondary-bg-color};
   --cardpanel-header-color: #ffffff;
   --cardpanel-border-color: rgb(53.8223684211, 45.8486842105, 55.1513157895);
 }
 
 .card-panel-tertiary {
-  --cardpanel-header-background: #{$bp-tertiary-color};
+  --cardpanel-header-background: #{$bp-tertiary-bg-color};
   --cardpanel-header-color: #000000;
   --cardpanel-border-color: rgb(93.6363636364, 112.3636363636, 101.7786561265);
 }
 
 .card-panel-quaternary {
-  --cardpanel-header-background: #{$bp-quaternary-color};
+  --cardpanel-header-background: #{$bp-quaternary-bg-color};
   --cardpanel-header-color: #ffffff;
   --cardpanel-border-color: rgb(15.1948051948, 10.1298701299, 15.8701298701);
 }
