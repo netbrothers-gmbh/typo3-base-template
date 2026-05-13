@@ -256,30 +256,6 @@
   }
 }
 
-.frame-size-small {
-  --frame-spacing: var(--frame-spacing-small-xs);
-}
-@media (min-width: 576px) {
-  .frame-size-small {
-    --frame-spacing: var(--frame-spacing-small-sm);
-  }
-}
-@media (min-width: 768px) {
-  .frame-size-small {
-    --frame-spacing: var(--frame-spacing-small-md);
-  }
-}
-@media (min-width: 992px) {
-  .frame-size-small {
-    --frame-spacing: var(--frame-spacing-small-lg);
-  }
-}
-@media (min-width: 1200px) {
-  .frame-size-small {
-    --frame-spacing: var(--frame-spacing-small-xl);
-  }
-}
-
 .frame-height-small,
 .frame-height-medium,
 .frame-height-max {
