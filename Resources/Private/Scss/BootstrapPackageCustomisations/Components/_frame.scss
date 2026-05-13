@@ -256,30 +256,6 @@
   }
 }
 
-.frame-size-small {
-  --frame-spacing: var(--frame-spacing-small-xs);
-}
-@media (min-width: 576px) {
-  .frame-size-small {
-    --frame-spacing: var(--frame-spacing-small-sm);
-  }
-}
-@media (min-width: 768px) {
-  .frame-size-small {
-    --frame-spacing: var(--frame-spacing-small-md);
-  }
-}
-@media (min-width: 992px) {
-  .frame-size-small {
-    --frame-spacing: var(--frame-spacing-small-lg);
-  }
-}
-@media (min-width: 1200px) {
-  .frame-size-small {
-    --frame-spacing: var(--frame-spacing-small-xl);
-  }
-}
-
 .frame-height-small,
 .frame-height-medium,
 .frame-height-max {
@@ -336,8 +312,8 @@
 }
 
 .frame-layout-embedded.frame-space-after-none:not(.frame-option-ruler-after) + .frame-layout-embedded.frame-space-before-none:not(.frame-option-ruler-before),
-.frame-layout-embedded.frame-space-after-none:not(.frame-option-ruler-after) + .frame-size-default.frame-background-none.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage),
-.frame-size-default.frame-background-none.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage) + .frame-layout-embedded.frame-space-before-none:not(.frame-option-ruler-before), .frame-size-default.frame-background-dark.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-size-default.frame-background-dark.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-size-default.frame-background-light.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-size-default.frame-background-light.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-size-default.frame-background-quaternary.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-size-default.frame-background-quaternary.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-size-default.frame-background-tertiary.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-size-default.frame-background-tertiary.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-size-default.frame-background-secondary.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-size-default.frame-background-secondary.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-size-default.frame-background-primary.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-size-default.frame-background-primary.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-size-default.frame-background-none.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-size-default.frame-background-none.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded) {
+.frame-layout-embedded.frame-space-after-none:not(.frame-option-ruler-after) + .frame-background-none.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage),
+.frame-background-none.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage) + .frame-layout-embedded.frame-space-before-none:not(.frame-option-ruler-before), .frame-background-dark.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-background-dark.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-background-light.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-background-light.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-background-quaternary.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-background-quaternary.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-background-tertiary.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-background-tertiary.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-background-secondary.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-background-secondary.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-background-primary.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-background-primary.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded), .frame-background-none.frame-space-after-none:not(.frame-option-ruler-after):not(.frame-has-backgroundimage):not(.frame-layout-embedded) + .frame-background-none.frame-space-before-none:not(.frame-option-ruler-before):not(.frame-has-backgroundimage):not(.frame-layout-embedded) {
   --frame-outer-spacing-before: calc(-1 * var(--frame-spacing));
 }
 
