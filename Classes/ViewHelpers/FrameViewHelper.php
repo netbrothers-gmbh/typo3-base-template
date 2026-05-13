@@ -43,6 +43,7 @@ class FrameViewHelper extends AbstractViewHelper
         $this->registerArgument('frameClass', 'string', '', false, 'default');
         $this->registerArgument('frameAttributes', 'array', 'Additional tag attributes. They will be added directly to the resulting HTML tag.', false, []);
         $this->registerArgument('type', 'string', '', false, 'default');
+        $this->registerArgument('size', 'string', '', false, 'default');
         $this->registerArgument('height', 'string', '', false, 'default');
         $this->registerArgument('layout', 'string', '', false, 'default');
         $this->registerArgument('backgroundColor', 'string', '', false, 'none');
@@ -63,6 +64,7 @@ class FrameViewHelper extends AbstractViewHelper
         $configuration['type'] = trim((string) $configuration['type']) !== '' ? trim($configuration['type']) : 'default';
         $configuration['frameClass'] = trim((string) $configuration['frameClass']) !== '' ? trim($configuration['frameClass']) : 'default';
         $configuration['frameAttributes'] = isset($configuration['frameAttributes']) && is_array($configuration['frameAttributes']) ? $configuration['frameAttributes'] : [];
+        $configuration['size'] = trim((string) $configuration['size']) !== '' ? trim($configuration['size']) : 'default';
         $configuration['height'] = trim((string) $configuration['height']) !== '' ? trim($configuration['height']) : 'default';
         $configuration['layout'] = trim((string) $configuration['layout']) !== '' ? trim($configuration['layout']) : 'default';
         $configuration['backgroundColor'] = trim((string) $configuration['backgroundColor']) !== '' ? trim($configuration['backgroundColor']) : 'none';
@@ -78,6 +80,7 @@ class FrameViewHelper extends AbstractViewHelper
         $classes[] = 'frame-' . $configuration['frameClass'];
         $classes[] = 'frame-type-' . $configuration['type'];
         $classes[] = 'frame-layout-' . $configuration['layout'];
+        $classes[] = 'frame-size-' . $configuration['size'];
         $classes[] = 'frame-height-' . $configuration['height'];
         $classes[] = 'frame-background-' . $configuration['backgroundColor'];
         $classes[] = 'frame-space-before-' . $configuration['spaceBefore'];
